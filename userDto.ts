@@ -1,17 +1,17 @@
 import { Tenant } from "app/entities/tenant";
 import { DtoBase } from "framework/entities/DtoBase"
 
-export class GroupDto extends DtoBase{
-  group_idDto?: number;
+export class UserDto extends DtoBase{
+  user_idDto?: number;
   groupNameDto?: string;
   groupTypeDto?: string;
   groupDetailsDto?: string;
   tenantIdDto?: Tenant;
-
+  
 }
 
 const entityJson = {
-  group_id : "group_id?",
+  user_id : "user_id?",
   groupName : "groupName?",
   groupType : "groupType?",
   groupDetails : "groupDetails?",
@@ -19,15 +19,15 @@ const entityJson = {
 };
 
 const dtoJson = {
-  group_idDto : "group_idDto?",
+  user_idDto : "user_idDto?",
 groupNameDto : "groupNameDto?",
 groupTypeDto : "groupTypeDto?",
 groupDetailsDto : "groupDetailsDto?",
-tenantIdDto : "tenantIdDto"
+tenantIdDto : "tenantIdDto?"
 };
 
 const entityToDtoJson = {
-  group_idDto : "group_id?",
+  user_idDto : "user_id?",
 groupNameDto : "groupName?",
 groupTypeDto : "groupType?",
 groupDetailsDto : "groupDetails?",
@@ -35,11 +35,11 @@ tenantIdDto : "tenantId?"
 };
 
 const dtoToEntityJson= {
-  group_id : "group_idDto?",
+  user_id : "user_idDto?",
 groupName : "groupNameDto?",
 groupType : "groupTypeDto?",
 groupDetails : "groupDetailsDto?",
-tenantId : "tenantIdDto?",
+tenantId : "tenantIdDto?"
 };
 
 module.exports.entityJson = entityJson;

@@ -1,9 +1,9 @@
-// import { BusinessEvent } from "app/entities/businessEvent";
+import { BusinessEvent } from "app/entities/businessEvent";
 import { BusinessEventSubscriber } from "app/entities/businessEventSubscriber";
 import { DdEntity } from "app/entities/ddEntities";
 import { DtoBase } from "framework/entities/DtoBase";
 
-export class BusinessEventDto extends DtoBase{
+export class BusinessEventSubscriberDto extends DtoBase{
     eventNameDto: string;
     eventDetailsDto: string;
     operationNameDto: string;
