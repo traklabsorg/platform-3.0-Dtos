@@ -4,12 +4,12 @@ import { DdEntity } from "app/entities/ddEntities";
 import { DtoBase } from "framework/entities/DtoBase";
 
 export class BusinessEventDto extends DtoBase{
-    eventNameDto: string;
-    eventDetailsDto: string;
-    operationNameDto: string;
-    publicDetailsDto: string;
-    ddEntityIdDto: DdEntity;
-    businessEventSubscriberDto: BusinessEventSubscriber[];
+    eventName: string;
+    eventDetails: string;
+    operationName: string;
+    publicDetails: string;
+    ddEntityId: DdEntity;
+    businessEventSubscriber: BusinessEventSubscriber[];
 }
 
 const entityJson = {
