@@ -1,6 +1,7 @@
 // import { BusinessEvent } from "app/platform-3.0-Entities/businessEvent";
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
-import { BusinessEventDto } from "./communityDto";
+import { BusinessEventDto } from "./businessEventDto";
+// import { BusinessEventDto } from "./communityDto";
 import { DdEntityDto } from "./ddEntitiesDto";
 import { ServiceConsumerDto } from "./serviceConsumerDto";
 
