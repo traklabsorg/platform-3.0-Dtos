@@ -1,20 +1,13 @@
-import { Group } from "app/entities/group";
-import { DtoBase } from "framework/entities/DtoBase";
+
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { GroupDto } from "./groupDto";
 
 export class ChannelDto extends DtoBase{
-  // channel_id?: number;
-  title: string;
-  channelType: string;
+  channel_id?: number;
+  title?: string;
+  channelType?: string;
   channelDetails?: string;
-  groupId: number;
-
-  constructor(){
-    super();
-    this.channelDetails='';
-    this.title='';
-    this.channelType='';
-    this.groupId=0;
-  }
+  groupId?: GroupDto;
 }
 
 // const entityJson = {
@@ -25,31 +18,31 @@ export class ChannelDto extends DtoBase{
 //   groupId : "groupId?"
 // };
 
-// const dtoJson = {
-//   channel_idDto : "channel_idDto?",
-// titleDto : "titleDto?",
-// channelTypeDto : "channelTypeDto?",
-// channelDetailsDto : "channelDetailsDto?",
-// groupIdDto : "groupIdDto?"
+// const Json = {
+//   channel_id : "channel_id?",
+// title : "title?",
+// channelType : "channelType?",
+// channelDetails : "channelDetails?",
+// groupId : "groupId?"
 // };
 
-// const entityToDtoJson = {
-//   channel_idDto : "channel_id?",
-// titleDto : "title?",
-// channelTypeDto : "channelType?",
-// channelDetailsDto : "channelDetails?",
-// groupIdDto : "groupId?"
+// const entityToJson = {
+//   channel_id : "channel_id?",
+// title : "title?",
+// channelType : "channelType?",
+// channelDetails : "channelDetails?",
+// groupId : "groupId?"
 // };
 
-// const dtoToEntityJson= {
-//   channel_id : "channel_idDto?",
-// title : "titleDto?",
-// channelType : "channelTypeDto?",
-// channelDetails : "channelDetailsDto?",
-// groupId : "groupIdDto?"
+// const ToEntityJson= {
+//   channel_id : "channel_id?",
+// title : "title?",
+// channelType : "channelType?",
+// channelDetails : "channelDetails?",
+// groupId : "groupId?"
 // };
 
 // module.exports.entityJson = entityJson;
-// module.exports.dtoJson = dtoJson;
-// module.exports.entityToDtoJson = entityToDtoJson;
-// module.exports.dtoToEntityJson = dtoToEntityJson;
+// module.exports.Json = Json;
+// module.exports.entityToJson = entityToJson;
+// module.exports.ToEntityJson = ToEntityJson;

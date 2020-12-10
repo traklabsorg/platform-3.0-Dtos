@@ -1,54 +1,50 @@
-import { BusinessEvent } from "app/entities/businessEvent";
-import { BusinessEventSubscriber } from "app/entities/businessEventSubscriber";
-import { DdEntity } from "app/entities/ddEntities";
-import { DtoBase } from "framework/entities/DtoBase";
+// import { BusinessEvent } from "app/platform-3.0-Entities/businessEvent";
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { BusinessEventDto } from "./communityDto";
+import { DdEntityDto } from "./ddEntitiesDto";
+import { ServiceConsumerDto } from "./serviceConsumerDto";
 
 export class BusinessEventSubscriberDto extends DtoBase{
-    eventName: string;
-    eventDetails: string;
     operationName: string;
-    publicDetails: string;
-    ddEntityId: DdEntity;
-    businessEventSubscriber: BusinessEventSubscriber[];
+    subscriptionDetails: string;
+    eventId: BusinessEventDto;
+    ddEntityId: DdEntityDto;
+    serviceConsumerId: ServiceConsumerDto;
 }
 
-const entityJson = {
-    eventName : "eventName?",
-    eventDetails : "eventDetails?",
-    operationName : "operationName?",
-    publicDetails : "publicDetails?",
-    ddEntityId : "ddEntityId?",
-    businessEventSubscriber : "businessEventSubscriber?"
-  };
+// const entityJson = {
+//     operationName : "operationName?",
+//     subscriptionDetails : "subscriptionDetails?",
+//     eventId : "eventId?",
+//     ddEntityId : "ddEntityId?",
+//     serviceConsumerId : "serviceConsumerId?",
+//   };
   
-  const dtoJson = {
-    eventNameDto : "eventNameDto?",
-    eventDetailsDto : "eventDetailsDto?",
-    operationNameDto : "operationNameDto?",
-    publicDetailsDto : "publicDetailsDto?",
-    ddEntityIdDto : "ddEntityIdDto?",
-    businessEventSubscriberDto : "businessEventSubscriberDto?"
-  };
+//   const Json = {
+//     operationName : "operationName?",
+//     subscriptionDetails : "subscriptionDetails?",
+//     eventId : "eventId?",
+//     ddEntityId : "ddEntityId?",
+//     serviceConsumerId : "serviceConsumerId?",
+//   };
   
-  const entityToDtoJson = {
-    eventNameDto : "eventName?",
-    eventDetailsDto : "eventDetails?",
-    operationNameDto : "operationName?",
-    publicDetailsDto : "publicDetails?",
-    ddEntityIdDto : "ddEntityId?",
-    businessEventSubscriberDto : "businessEventSubscriber?"
-  };
+//   const entityToJson = {
+//     operationName : "operationName?",
+//     subscriptionDetails : "subscriptionDetails?",
+//     eventId : "eventId?",
+//     ddEntityId : "ddEntityId?",
+//     serviceConsumerId : "serviceConsumerId?",
+//   };
   
-  const dtoToEntityJson= {
-    eventName : "eventNameDto?",
-    eventDetails : "eventDetailsDto?",
-    operationName : "operationNameDto?",
-    publicDetails : "publicDetailsDto?",
-    ddEntityId : "ddEntityIdDto?",
-    businessEventSubscriber : "businessEventSubscriberDto?",
-  };
+//   const ToEntityJson= {
+//     operationName : "operationName?",
+//     subscriptionDetails : "subscriptionDetails?",
+//     eventId : "eventId?",
+//     ddEntityId : "ddEntityId?",
+//     serviceConsumerId : "serviceConsumerId?",
+//   };
   
-  module.exports.entityJson = entityJson;
-  module.exports.dtoJson = dtoJson;
-  module.exports.entityToDtoJson = entityToDtoJson;
-  module.exports.dtoToEntityJson = dtoToEntityJson;
+//   module.exports.entityJson = entityJson;
+//   module.exports.Json = Json;
+//   module.exports.entityToJson = entityToJson;
+//   module.exports.ToEntityJson = ToEntityJson;

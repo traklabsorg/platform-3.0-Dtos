@@ -1,54 +1,32 @@
-// import { BusinessEvent } from "app/entities/businessEvent";
-import { BusinessEventSubscriber } from "app/entities/businessEventSubscriber";
-import { DdEntity } from "app/entities/ddEntities";
-import { DtoBase } from "framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 
-export class BusinessEventDto extends DtoBase{
-    eventName: string;
-    eventDetails: string;
-    operationName: string;
-    publicDetails: string;
-    ddEntityId: DdEntity;
-    businessEventSubscriber: BusinessEventSubscriber[];
+
+export class NotificationDto extends DtoBase{
+  notificationType: string;
+  notificationData: string;
 }
 
-const entityJson = {
-    eventName : "eventName?",
-    eventDetails : "eventDetails?",
-    operationName : "operationName?",
-    publicDetails : "publicDetails?",
-    ddEntityId : "ddEntityId?",
-    businessEventSubscriber : "businessEventSubscriber?"
-  };
+// const entityJson = {
+//     notificationType : "notificationType?",
+//     notificationData : "notificationData?",
+//   };
   
-  const dtoJson = {
-    eventNameDto : "eventNameDto?",
-    eventDetailsDto : "eventDetailsDto?",
-    operationNameDto : "operationNameDto?",
-    publicDetailsDto : "publicDetailsDto?",
-    ddEntityIdDto : "ddEntityIdDto?",
-    businessEventSubscriberDto : "businessEventSubscriberDto?"
-  };
+//   const dtoJson = {
+//     notificationTypeDto : "notificationTypeDto?",
+//     notificationDataDto : "notificationDataDto?",
+//   };
   
-  const entityToDtoJson = {
-    eventNameDto : "eventName?",
-    eventDetailsDto : "eventDetails?",
-    operationNameDto : "operationName?",
-    publicDetailsDto : "publicDetails?",
-    ddEntityIdDto : "ddEntityId?",
-    businessEventSubscriberDto : "businessEventSubscriber?"
-  };
+//   const entityToDtoJson = {
+//     notificationTypeDto : "notificationType?",
+//     notificationDataDto : "notificationData?",
+//   };
   
-  const dtoToEntityJson= {
-    eventName : "eventNameDto?",
-    eventDetails : "eventDetailsDto?",
-    operationName : "operationNameDto?",
-    publicDetails : "publicDetailsDto?",
-    ddEntityId : "ddEntityIdDto?",
-    businessEventSubscriber : "businessEventSubscriberDto?",
-  };
+//   const dtoToEntityJson= {
+//     notificationType : "notificationTypeDto?",
+//     notificationData : "notificationDataDto?",
+//   };
   
-  module.exports.entityJson = entityJson;
-  module.exports.dtoJson = dtoJson;
-  module.exports.entityToDtoJson = entityToDtoJson;
-  module.exports.dtoToEntityJson = dtoToEntityJson;
+//   module.exports.entityJson = entityJson;
+//   module.exports.dtoJson = dtoJson;
+//   module.exports.entityToDtoJson = entityToDtoJson;
+//   module.exports.dtoToEntityJson = dtoToEntityJson;

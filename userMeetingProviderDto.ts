@@ -1,30 +1,38 @@
-import { MeetingProvider } from "app/entities/meetingProvider";
-import { User } from "app/entities/user";
-import { DtoBase } from "framework/entities/DtoBase"
+// import { MeetingProvider } from "app/platform-3.0-Entities/meetingProvider";
+// import { User } from "app/platform-3.0-Entities/user";
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { LiveContentDto } from "./liveContentDto";
+import { MeetingProviderDto } from "./meetingProviderDto";
+import { UserDto } from "./userDto";
+import { UserMeetingProviders_MeetingDto } from "./userMeetingProviders_meetingDto";
 
 export class UserMeetingProviderDto extends DtoBase{
-  user_meeting_provider_idDto?: number;
-  userIdDto?: User;
-  meetingProviderIdDto?: MeetingProvider;
+  Details: string;
+  userId: number;
+  meetingProviderId: number;
+  userMeetingProvider_meetings: UserMeetingProviders_MeetingDto[];
+  user: UserDto;
+  meetingProvider: MeetingProviderDto;
+  liveContents: LiveContentDto[]
 }
 
-const entityJson = {
+// const entityJson = {
 
-};
+// };
 
-const dtoJson = {
+// const dtoJson = {
   
-};
+// };
 
-const entityToDtoJson = {
+// const entityToDtoJson = {
   
-};
+// };
 
-const dtoToEntityJson= {
+// const dtoToEntityJson= {
   
-};
+// };
 
-module.exports.entityJson = entityJson;
-module.exports.dtoJson = dtoJson;
-module.exports.entityToDtoJson = entityToDtoJson;
-module.exports.dtoToEntityJson = dtoToEntityJson;
+// module.exports.entityJson = entityJson;
+// module.exports.dtoJson = dtoJson;
+// module.exports.entityToDtoJson = entityToDtoJson;
+// module.exports.dtoToEntityJson = dtoToEntityJson;

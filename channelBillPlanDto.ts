@@ -1,54 +1,56 @@
-import { Channel } from "app/entities/channel";
-import { Plan } from "app/entities/plan";
-import { DtoBase } from "framework/entities/DtoBase";
+
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { ChannelDto } from "./channelDto";
+import { PlanDto } from "./planDto";
+
 
 export class ChannelBillPlanDto extends DtoBase{
-  additionalDetailsDto ?: string;
-  channelBillPlanDetailsDto ?: string;
-  planStartDateDto ?: Date;
-  planEndDateDto ?: Date;
-  channelIdDto ?: Channel;
-  planIdDto ?: Plan;
+  additionalDetails ?: string;
+  channelBillPlanDetails ?: string;
+  planStartDate ?: Date;
+  planEndDate ?: Date;
+  channelId ?: ChannelDto;
+  planId ?: PlanDto;
 }
 
 
-const entityJson = {
-  additionalDetails : "additionalDetails?",
-channelBillPlanDetails : "channelBillPlanDetails?",
-planStartDate : "planStartDate?",
-planEndDate : "planEndDate?",
-channelId : "channelId?",
-planId : "planId?"
-};
+// const entityJson = {
+//   additionalDetails : "additionalDetails?",
+// channelBillPlanDetails : "channelBillPlanDetails?",
+// planStartDate : "planStartDate?",
+// planEndDate : "planEndDate?",
+// channelId : "channelId?",
+// planId : "planId?"
+// };
 
-const dtoJson = {
-  additionalDetailsDto : "additionalDetailsDto?",
-channelBillPlanDetailsDto : "channelBillPlanDetailsDto?",
-planStartDateDto : "planStartDateDto?",
-planEndDateDto : "planEndDateDto?",
-channelIdDto : "channelIdDto?",
-planIdDto : "planIdDto?"
-};
+// const Json = {
+//   additionalDetails : "additionalDetails?",
+// channelBillPlanDetails : "channelBillPlanDetails?",
+// planStartDate : "planStartDate?",
+// planEndDate : "planEndDate?",
+// channelId : "channelId?",
+// planId : "planId?"
+// };
 
-const entityToDtoJson = {
-  additionalDetailsDto : "additionalDetails?",
-channelBillPlanDetailsDto : "channelBillPlanDetails?",
-planStartDateDto : "planStartDate?",
-planEndDateDto : "planEndDate?",
-channelIdDto : "channelId?",
-planIdDto : "planId?"
-};
+// const entityToJson = {
+//   additionalDetails : "additionalDetails?",
+// channelBillPlanDetails : "channelBillPlanDetails?",
+// planStartDate : "planStartDate?",
+// planEndDate : "planEndDate?",
+// channelId : "channelId?",
+// planId : "planId?"
+// };
 
-const dtoToEntityJson= {
-  additionalDetails : "additionalDetailsDto?",
-channelBillPlanDetails : "channelBillPlanDetailsDto?",
-planStartDate : "planStartDateDto?",
-planEndDate : "planEndDateDto?",
-channelId : "channelIdDto?",
-planId : "planIdDto?"
-};
+// const ToEntityJson= {
+//   additionalDetails : "additionalDetails?",
+// channelBillPlanDetails : "channelBillPlanDetails?",
+// planStartDate : "planStartDate?",
+// planEndDate : "planEndDate?",
+// channelId : "channelId?",
+// planId : "planId?"
+// };
 
-module.exports.entityJson = entityJson;
-module.exports.dtoJson = dtoJson;
-module.exports.entityToDtoJson = entityToDtoJson;
-module.exports.dtoToEntityJson = dtoToEntityJson;
+// module.exports.entityJson = entityJson;
+// module.exports.Json = Json;
+// module.exports.entityToJson = entityToJson;
+// module.exports.ToEntityJson = ToEntityJson;

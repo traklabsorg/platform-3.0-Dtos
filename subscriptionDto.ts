@@ -1,54 +1,70 @@
-// import { BusinessEvent } from "app/entities/businessEvent";
-import { BusinessEventSubscriber } from "app/entities/businessEventSubscriber";
-import { DdEntity } from "app/entities/ddEntities";
-import { DtoBase } from "framework/entities/DtoBase";
+// import { ChannelBillPlan } from "app/platform-3.0-Entities/channelBillPlan";
+// import { SubscriptionOrder } from "app/platform-3.0-Entities/subscriptionOrder";
+import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { ChannelBillPlanDto } from "./channelBillPlanDto";
+import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
-export class BusinessEventDto extends DtoBase{
-    eventName: string;
-    eventDetails: string;
-    operationName: string;
-    publicDetails: string;
-    ddEntityId: DdEntity;
-    businessEventSubscriber: BusinessEventSubscriber[];
+export class SubscriptionDto extends DtoBase{
+    subscriptionDetails: string;
+    isAutoRenew: boolean;
+    isActive: boolean;
+    subscriptionType: string;
+    startDateTime: Date;
+    endDateTime: Date;
+    transactionDateTime: Date;
+    channelBillPlanId: ChannelBillPlanDto;
+    subscriptionOrders: SubscriptionOrderDto[]
 }
 
-const entityJson = {
-    eventName : "eventName?",
-    eventDetails : "eventDetails?",
-    operationName : "operationName?",
-    publicDetails : "publicDetails?",
-    ddEntityId : "ddEntityId?",
-    businessEventSubscriber : "businessEventSubscriber?"
-  };
+// const entityJson = {
+//     subscriptionDetails : "subscriptionDetails?",
+//     isAutoRenew : "isAutoRenew?",
+//     isActive : "isActive?",
+//     subscriptionType : "subscriptionType?",
+//     startDateTime : "startDateTime?",
+//     endDateTime : "endDateTime?",
+//     transactionDateTime : "transactionDateTime?",
+//     channelBillPlanId : "channelBillPlanId?",
+//     subscriptionOrders : "subscriptionOrders?",
+//   };
   
-  const dtoJson = {
-    eventNameDto : "eventNameDto?",
-    eventDetailsDto : "eventDetailsDto?",
-    operationNameDto : "operationNameDto?",
-    publicDetailsDto : "publicDetailsDto?",
-    ddEntityIdDto : "ddEntityIdDto?",
-    businessEventSubscriberDto : "businessEventSubscriberDto?"
-  };
+//   const dtoJson = {
+//     subscriptionDetailsDto : "subscriptionDetailsDto?",
+//     isAutoRenewDto : "isAutoRenewDto?",
+//     isActiveDto : "isActiveDto?",
+//     subscriptionTypeDto : "subscriptionTypeDto?",
+//     startDateTimeDto : "startDateTimeDto?",
+//     endDateTimeDto : "endDateTimeDto?",
+//     transactionDateTimeDto : "transactionDateTimeDto?",
+//     channelBillPlanIdDto : "channelBillPlanIdDto?",
+//     subscriptionOrdersDto : "subscriptionOrdersDto?",
+//   };
   
-  const entityToDtoJson = {
-    eventNameDto : "eventName?",
-    eventDetailsDto : "eventDetails?",
-    operationNameDto : "operationName?",
-    publicDetailsDto : "publicDetails?",
-    ddEntityIdDto : "ddEntityId?",
-    businessEventSubscriberDto : "businessEventSubscriber?"
-  };
+//   const entityToDtoJson = {
+//     subscriptionDetailsDto : "subscriptionDetails?",
+//     isAutoRenewDto : "isAutoRenew?",
+//     isActiveDto : "isActive?",
+//     subscriptionTypeDto : "subscriptionType?",
+//     startDateTimeDto : "startDateTime?",
+//     endDateTimeDto : "endDateTime?",
+//     transactionDateTimeDto : "transactionDateTime?",
+//     channelBillPlanIdDto : "channelBillPlanId?",
+//     subscriptionOrdersDto : "subscriptionOrders?",
+//   };
   
-  const dtoToEntityJson= {
-    eventName : "eventNameDto?",
-    eventDetails : "eventDetailsDto?",
-    operationName : "operationNameDto?",
-    publicDetails : "publicDetailsDto?",
-    ddEntityId : "ddEntityIdDto?",
-    businessEventSubscriber : "businessEventSubscriberDto?",
-  };
+//   const dtoToEntityJson= {
+//     subscriptionDetails : "subscriptionDetailsDto?",
+//     isAutoRenew : "isAutoRenewDto?",
+//     isActive : "isActiveDto?",
+//     subscriptionType : "subscriptionTypeDto?",
+//     startDateTime : "startDateTimeDto?",
+//     endDateTime : "endDateTimeDto?",
+//     transactionDateTime : "transactionDateTimeDto?",
+//     channelBillPlanId : "channelBillPlanIdDto?",
+//     subscriptionOrders : "subscriptionOrdersDto?",
+//   };
   
-  module.exports.entityJson = entityJson;
-  module.exports.dtoJson = dtoJson;
-  module.exports.entityToDtoJson = entityToDtoJson;
-  module.exports.dtoToEntityJson = dtoToEntityJson;
+//   module.exports.entityJson = entityJson;
+//   module.exports.dtoJson = dtoJson;
+//   module.exports.entityToDtoJson = entityToDtoJson;
+//   module.exports.dtoToEntityJson = dtoToEntityJson;
