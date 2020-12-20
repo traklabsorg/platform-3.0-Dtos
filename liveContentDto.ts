@@ -1,5 +1,5 @@
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
-import { CommunitiesDto } from "./communitiesDto";
+import { CommunityDto } from "./communityDto";
 import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
@@ -9,7 +9,7 @@ export class LiveContentDto extends DtoBase{
   startDate: Date;
   endDate: Date;
   userMeetingProviderId: number;
-  communityId: CommunitiesDto;
+  communityId: CommunityDto;
   userMeetingProvider: UserMeetingProviderDto;
   liveContentUsers: LiveContentUserDto[];
 }

@@ -1,6 +1,6 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
-import { CommunitiesDto } from "./communitiesDto";
+import { CommunityDto } from "./communityDto";
 import { EnrolledMeetingsDto } from "./enrolledMeetingsDto";
 import { GroupUserDto } from "./groupUserDto";
 import { LessonDataReviewDto } from "./lessonDataReviewDto";
@@ -9,9 +9,13 @@ import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
 export class UserDto extends DtoBase{
-  groupName: string;
-  groupType: string;
-  groupDetails: string;
+  userName: string;
+  userType: string;
+  userDetails: string;
+  userEmail: string;
+  userImage: string;
+  isActive: string;
+  userAdditionalDetails: string;
   lastLogonDateTime: Date;
   liveContentUsers: LiveContentUserDto[];
   userMeetingProviders: UserMeetingProviderDto[];
@@ -19,7 +23,8 @@ export class UserDto extends DtoBase{
   enrolledMeetings: EnrolledMeetingsDto[];
   lessonDataReviews: LessonDataReviewDto[];
   lessonDataUsers: LessonDataUserDto[];
-  communityId : CommunitiesDto;
+  communityId: number;
+  community: CommunityDto;
 }
 
 // const entityJson = {

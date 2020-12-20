@@ -1,7 +1,7 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { ChannelDto } from "./channelDto";
-import { CommunitiesDto } from "./communitiesDto";
+import { CommunityDto } from "./communityDto";
 import { GroupUserDto } from "./groupUserDto";
 
 export class GroupDto extends DtoBase{
@@ -11,7 +11,7 @@ export class GroupDto extends DtoBase{
   groupPayerType: string;
   channels: ChannelDto[];
   groupUsers : GroupUserDto[]
-  tenant : CommunitiesDto;
+  community : CommunityDto;
 }
 
 // const entityJson = {

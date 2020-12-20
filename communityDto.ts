@@ -3,12 +3,15 @@ import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
 
 
-export class CommunitiesDto extends DtoBase{
+export class CommunityDto extends DtoBase{
     communityName: string;
     address: string;
     paymentInfo: string;
     subscriptionStartDate: Date;
     subscriptionEndDate: Date;
+    userQuotas: string;
+    communityAdditionalData: string;
+    communityUrl: string;
     users: UserDto[];
     groups: GroupDto[]
 }
