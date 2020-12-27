@@ -2,11 +2,11 @@ import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 
 export class PlanDto extends DtoBase{
-  planName: string;
-  planDetails: string;
-  planDefaultPrice: string;
-  planCurrency: string;
-  channelBillPlans: ChannelBillPlanDto[]
+  planName?: string;
+  planDetails?: string;
+  planDefaultPrice?: string;
+  planCurrency?: string;
+//  channelBillPlans: ChannelBillPlanDto[];
 }
 
 // const entityJson = {

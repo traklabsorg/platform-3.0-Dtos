@@ -3,10 +3,10 @@ import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { BusinessEventSubscriberDto } from "./businessEventSubscriberDto";
 
 export class ServiceConsumerDto extends DtoBase{
-    eventName: string;
-    eventDetails: string;
-    serviceConsumerDetails: string;
-    businessEventSubscriber: BusinessEventSubscriberDto[];
+    eventName?: string;
+    eventDetails?: string;
+    serviceConsumerDetails?: string;
+//    businessEventSubscriber: BusinessEventSubscriberDto[];
 }
 
 // const entityJson = {

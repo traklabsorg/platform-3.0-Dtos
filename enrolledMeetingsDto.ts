@@ -3,12 +3,14 @@ import { UserDto } from "./userDto";
 import { UserMeetingProviders_MeetingDto } from "./userMeetingProviders_meetingDto";
 
 export class EnrolledMeetingsDto extends DtoBase{
-  enrolledOn: Date;
-  userId: number;
-  hostUserId: number;
-  user: UserDto;
-  hostUser: UserDto;
-  userMeetingProviderMeetingId: UserMeetingProviders_MeetingDto;
+  enrolledOn?: Date;
+  userId?: number;
+  hostUserId?: number;
+  hostUsuserMeetingProviderMeetingerId?: number;
+  user?: UserDto;
+//  hostUser: UserDto;
+  userMeetingProviderMeeting?: UserMeetingProviders_MeetingDto;
+//  userMeetingProviderMeetingId: UserMeetingProviders_MeetingDto;
 }
 
 // const entityJson = {

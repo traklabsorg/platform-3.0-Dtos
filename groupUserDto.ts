@@ -4,11 +4,12 @@ import { UserDto } from "./userDto";
 
 
 export class GroupUserDto extends DtoBase{
-  groupUserDetails: string;
-  groupId: number;
-  userId: number;
-  group: GroupDto;
-  user: UserDto;
+  groupUserDetails?: string;
+  groupId?: number;
+  userId?: number;
+  groupImage?: string;
+  group?: GroupDto;
+  user?: UserDto;
 }
 
 // const entityJson = {

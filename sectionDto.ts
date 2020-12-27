@@ -6,10 +6,13 @@ import { LessonDto } from "./lessonDto";
 
 
 export class SectionDto extends DtoBase{
-  title: string;
-  channelId: number;
-  channel: ChannelDto;
-  lessons: LessonDto[];
+  title?: string;
+  sectionDetails?: string;
+  sectionType?: string;
+  channelId?: number;
+  channel?: ChannelDto;
+//  lessons: LessonDto[];
+  lessonDataReview?: LessonDataReviewDto;
 }
 
 // const entityJson = {

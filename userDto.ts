@@ -9,22 +9,23 @@ import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
 export class UserDto extends DtoBase{
-  userName: string;
-  userType: string;
-  userDetails: string;
-  userEmail: string;
-  userImage: string;
-  isActive: string;
-  userAdditionalDetails: string;
-  lastLogonDateTime: Date;
-  liveContentUsers: LiveContentUserDto[];
-  userMeetingProviders: UserMeetingProviderDto[];
-  groupUsers: GroupUserDto[];
-  enrolledMeetings: EnrolledMeetingsDto[];
-  lessonDataReviews: LessonDataReviewDto[];
-  lessonDataUsers: LessonDataUserDto[];
-  communityId: number;
-  community: CommunityDto;
+  userName?: string;
+  userType?: string;
+  userDetails?: string;
+  userEmail?: string;
+  userImage?: string;
+  isActive?: string;
+  userAdditionalDetails?: string;
+  lastLogonDateTime?: Date;
+//  liveContentUsers: LiveContentUserDto[];
+//  userMeetingProviders: UserMeetingProviderDto[];
+//  groupUsers: GroupUserDto[];
+//  enrolledMeetings: EnrolledMeetingsDto[];
+//  lessonDataReviews: LessonDataReviewDto[];
+//  lessonDataUsers: LessonDataUserDto[];
+  communityId?: number;
+  community?: CommunityDto;
+  liveContents?: any;
 }
 
 // const entityJson = {

@@ -5,12 +5,15 @@ import { PlanDto } from "./planDto";
 
 
 export class ChannelBillPlanDto extends DtoBase{
-  additionalDetails ?: string;
-  channelBillPlanDetails ?: string;
-  planStartDate ?: Date;
-  planEndDate ?: Date;
-  channelId ?: ChannelDto;
-  planId ?: PlanDto;
+  additionalDetails?: string;
+  channelBillPlanDetails?: string;
+  planStartDate?: Date;
+  planEndDate?: Date;
+  channelId?: number;
+  planId?: number;
+  channel?: ChannelDto;
+//  planId ?: PlanDto;
+  plan?: PlanDto;
 }
 
 

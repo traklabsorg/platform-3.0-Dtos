@@ -7,13 +7,13 @@ import { UserDto } from "./userDto";
 import { UserMeetingProviders_MeetingDto } from "./userMeetingProviders_meetingDto";
 
 export class UserMeetingProviderDto extends DtoBase{
-  Details: string;
-  userId: number;
-  meetingProviderId: number;
-  userMeetingProvider_meetings: UserMeetingProviders_MeetingDto[];
-  user: UserDto;
-  meetingProvider: MeetingProviderDto;
-  liveContents: LiveContentDto[]
+  Details?: string;
+  userId?: number;
+  meetingProviderId?: number;
+//  userMeetingProvider_meetings: UserMeetingProviders_MeetingDto[];
+  user?: UserDto;
+  meetingProvider?: MeetingProviderDto;
+//  liveContents: LiveContentDto[];
 }
 
 // const entityJson = {

@@ -6,11 +6,16 @@ import { DdEntityDto } from "./ddEntitiesDto";
 import { ServiceConsumerDto } from "./serviceConsumerDto";
 
 export class BusinessEventSubscriberDto extends DtoBase{
-    operationName: string;
-    subscriptionDetails: string;
-    eventId: BusinessEventDto;
-    ddEntityId: DdEntityDto;
-    serviceConsumerId: ServiceConsumerDto;
+    operationName?: string;
+    subscriptionDetails?: string;
+    businessEventId?: number;
+    subscriberDdEntityId?: number;
+//  eventId: BusinessEventDto;
+//    ddEntityId?: DdEntityDto;
+    serviceConsumerId?: number;
+    businessEvent?: BusinessEventDto;
+    serviceConsumer?: ServiceConsumerDto;
+    ddEntity?: DdEntityDto;
 }
 
 // const entityJson = {

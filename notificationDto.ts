@@ -2,8 +2,8 @@ import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 
 
 export class NotificationDto extends DtoBase{
-  notificationType: string;
-  notificationData: string;
+  notificationType?: string;
+  notificationData?: string;
 }
 
 // const entityJson = {

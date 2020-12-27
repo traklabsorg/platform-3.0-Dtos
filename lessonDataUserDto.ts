@@ -3,9 +3,11 @@ import { LessonDataDto } from "./lessonDataDto";
 import { UserDto } from "./userDto";
 
 export class LessonDataUserDto extends DtoBase{
-    additonalDetails: string;
-    userId: number;
-    contentId: number;
-    user: UserDto;
-    content: LessonDataDto;
+    additonalDetails?: string;
+    userId?: number;
+    contentId?: number;
+    user?: UserDto;
+    channel?: Channel;
+    lessonData?: LessonDataDto;
+//    content: LessonDataDto;
 }

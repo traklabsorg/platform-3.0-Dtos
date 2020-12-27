@@ -3,11 +3,14 @@ import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { GroupDto } from "./groupDto";
 
 export class ChannelDto extends DtoBase{
-  channel_id?: number;
+//channel_id?: number;
   title?: string;
   channelType?: string;
   channelDetails?: string;
-  groupId?: GroupDto;
+//groupId?: GroupDto;
+  isDraft?: string;
+  tenantId?: number;
+  community?:Community;
 }
 
 // const entityJson = {

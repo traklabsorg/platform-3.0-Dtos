@@ -5,13 +5,16 @@ import { CommunityDto } from "./communityDto";
 import { GroupUserDto } from "./groupUserDto";
 
 export class GroupDto extends DtoBase{
-  groupName: string;
-  groupType: string;
-  groupDetails: string;
-  groupPayerType: string;
-  channels: ChannelDto[];
-  groupUsers : GroupUserDto[]
-  community : CommunityDto;
+  groupName?: string;
+  groupType?: string;
+  groupDetails?: string;
+  groupPayerType?: string;
+  communityId?: number;
+  isActive?: string;
+  community?: CommunityDto;
+//  channels: ChannelDto[];
+//  groupUsers : GroupUserDto[];
+//  community : CommunityDto;
 }
 
 // const entityJson = {

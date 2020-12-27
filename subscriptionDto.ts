@@ -5,15 +5,17 @@ import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
 export class SubscriptionDto extends DtoBase{
-    subscriptionDetails: string;
-    isAutoRenew: boolean;
-    isActive: boolean;
-    subscriptionType: string;
-    startDateTime: Date;
-    endDateTime: Date;
-    transactionDateTime: Date;
-    channelBillPlanId: ChannelBillPlanDto;
-    subscriptionOrders: SubscriptionOrderDto[]
+    subscriptionDetails?: string;
+    isAutoRenew?: boolean;
+    isActive?: boolean;
+    subscriptionType?: string;
+    startDateTime?: Date;
+    endDateTime?: Date;
+    transactionDateTime?: Date;
+    channelBillPlanId?: number;
+//    channelBillPlanId?: ChannelBillPlanDto;
+    channelBillPlan?: ChannelBillPlanDto;
+//    subscriptionOrders: SubscriptionOrderDto[];
 }
 
 // const entityJson = {

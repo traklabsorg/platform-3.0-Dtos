@@ -4,11 +4,11 @@ import { PaymentDto } from "./paymentDto";
 
 
 export class PaymentCouponDto extends DtoBase{
-  paymentCouponDetails: string;
-  paymentId: number;
-  couponId: number;
-  coupon: CouponDto;
-  payment: PaymentDto;
+  paymentCouponDetails?: string;
+  paymentId?: number;
+  couponId?: number;
+  coupon?: CouponDto;
+  payment?: PaymentDto;
 }
 
 // const entityJson = {

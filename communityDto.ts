@@ -4,16 +4,18 @@ import { UserDto } from "./userDto";
 
 
 export class CommunityDto extends DtoBase{
-    communityName: string;
-    address: string;
-    paymentInfo: string;
-    subscriptionStartDate: Date;
-    subscriptionEndDate: Date;
-    userQuotas: string;
-    communityAdditionalData: string;
-    communityUrl: string;
-    users: UserDto[];
-    groups: GroupDto[]
+    communityName?: string;
+    communityAdminId?: number;
+    address?: string;
+    paymentInfo?: string;
+    subscriptionStartDate?: Date;
+    subscriptionEndDate?: Date;
+    userQuotas?: string;
+    communityAdditionalData?: string;
+    communityUrl?: string;
+//    users: UserDto[];
+//    groups: GroupDto[];
+
 }
 
 // const entityJson = {

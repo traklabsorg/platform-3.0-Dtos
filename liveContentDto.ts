@@ -4,14 +4,17 @@ import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
 export class LiveContentDto extends DtoBase{
-  url: string;
-  contentDetails: string;
-  startDate: Date;
-  endDate: Date;
-  userMeetingProviderId: number;
-  communityId: CommunityDto;
-  userMeetingProvider: UserMeetingProviderDto;
-  liveContentUsers: LiveContentUserDto[];
+  url?: string;
+  contentDetails?: string;
+  startDate?: Date;
+  endDate?: Date;
+  userMeetingProviderId?: number;
+  meetingProviderId?: number;
+  user?: UserDto;
+  meetingProvider?: MeetingProviderDto;
+//  communityId: CommunityDto;
+//  userMeetingProvider: UserMeetingProviderDto;
+//  liveContentUsers: LiveContentUserDto[];
 }
 
 // const entityJson = {

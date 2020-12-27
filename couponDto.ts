@@ -2,15 +2,15 @@ import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { PaymentCouponDto } from "./paymentCouponDto";
 
 export class CouponDto extends DtoBase{
-  couponCode: string;
-  validTill: Date;
-  usageCount: number;
-  description: string;
-  usageLimit: number;
-  couponType: string;
-  isActive: boolean;
-  couponDetails: string;
-  paymentCoupons: PaymentCouponDto[]
+  couponCode?: string;
+  validTill?: Date;
+  usageCount?: number;
+  description?: string;
+  usageLimit?: number;
+  couponType?: string;
+  isActive?: boolean;
+  couponDetails?: string;
+//  paymentCoupons: PaymentCouponDto[];
 }
 
 // const entityJson = {
