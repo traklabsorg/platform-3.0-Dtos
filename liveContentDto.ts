@@ -1,6 +1,8 @@
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { CommunityDto } from "./communityDto";
 import { LiveContentUserDto } from "./liveContentUserDto";
+import { MeetingProviderDto } from "./meetingProviderDto";
+import { UserDto } from "./userDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
 export class LiveContentDto extends DtoBase{

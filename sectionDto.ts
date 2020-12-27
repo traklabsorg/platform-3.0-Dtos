@@ -2,6 +2,7 @@
 // import { LiveContent } from "app/platform-3.0-Entities/liveContent";
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
 import { ChannelDto } from "./channelDto";
+import { LessonDataReviewDto } from "./lessonDataReviewDto";
 import { LessonDto } from "./lessonDto";
 
 

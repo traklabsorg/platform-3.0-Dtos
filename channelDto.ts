@@ -1,5 +1,6 @@
 
 import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { CommunityDto } from "./communityDto";
 import { GroupDto } from "./groupDto";
 
 export class ChannelDto extends DtoBase{
@@ -10,7 +11,7 @@ export class ChannelDto extends DtoBase{
 //groupId?: GroupDto;
   isDraft?: string;
   tenantId?: number;
-  community?:Community;
+  community?:CommunityDto;
 }
 
 // const entityJson = {
