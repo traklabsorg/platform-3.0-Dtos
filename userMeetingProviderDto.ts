@@ -1,6 +1,6 @@
 // import { MeetingProvider } from "app/platform-3.0-Entities/meetingProvider";
 // import { User } from "app/platform-3.0-Entities/user";
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { LiveContentDto } from "./liveContentDto";
 import { MeetingProviderDto } from "./meetingProviderDto";
 import { UserDto } from "./userDto";

@@ -1,4 +1,4 @@
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 
 export class PlanDto extends DtoBase{

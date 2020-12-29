@@ -1,4 +1,4 @@
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { CouponDto } from "./couponDto";
 import { PaymentDto } from "./paymentDto";
 

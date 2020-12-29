@@ -1,5 +1,5 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelDto } from "./channelDto";
 import { CommunityDto } from "./communityDto";
 import { GroupUserDto } from "./groupUserDto";

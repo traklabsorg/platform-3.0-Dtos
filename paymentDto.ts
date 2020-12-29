@@ -1,6 +1,6 @@
 // import { BusinessEventSubscriber } from "app/platform-3.0-Entities/businessEventSubscriber";
 // import { DdEntity } from "app/platform-3.0-Entities/ddEntities";
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { PaymentCouponDto } from "./paymentCouponDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 

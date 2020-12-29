@@ -1,5 +1,5 @@
 // import { BusinessEvent } from "app/platform-3.0-Entities/businessEvent";
-import { DtoBase } from "../platform-3.0-Framework/entities/DtoBase";
+import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
 import { BusinessEventDto } from "./businessEventDto";
 // import { BusinessEventDto } from "./communityDto";
 import { DdEntityDto } from "./ddEntitiesDto";
