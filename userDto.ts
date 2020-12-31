@@ -17,6 +17,10 @@ export class UserDto extends DtoBase{
   isActive?: string;
   userAdditionalDetails?: string;
   lastLogonDateTime?: Date;
+  externalUserId: number;
+  externalTenantUserId: number;
+  externalTenantUserAppId: number;
+
 //  liveContentUsers: LiveContentUserDto[];
 //  userMeetingProviders: UserMeetingProviderDto[];
 //  groupUsers: GroupUserDto[];

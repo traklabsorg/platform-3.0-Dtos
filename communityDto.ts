@@ -13,6 +13,8 @@ export class CommunityDto extends DtoBase{
     userQuotas?: string;
     communityAdditionalData?: string;
     communityUrl?: string;
+
+    isActive?: boolean;
 //    users: UserDto[];
 //    groups: GroupDto[];
 
