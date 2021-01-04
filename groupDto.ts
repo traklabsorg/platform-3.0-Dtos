@@ -1,10 +1,10 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 import { ChannelDto } from "./channelDto";
 import { CommunityDto } from "./communityDto";
 import { GroupUserDto } from "./groupUserDto";
 
-export class GroupDto extends DtoBase{
+export class GroupDto extends DtoBase {
   groupName?: string;
   groupType?: string;
   groupDetails?: string;
@@ -12,9 +12,9 @@ export class GroupDto extends DtoBase{
   communityId?: number;
   isActive?: string;
   community?: CommunityDto;
-//  channels: ChannelDto[];
-//  groupUsers : GroupUserDto[];
-//  community : CommunityDto;
+  //  channels: ChannelDto[];
+  //  groupUsers : GroupUserDto[];
+  //  community : CommunityDto;
 }
 
 // const entityJson = {

@@ -1,10 +1,8 @@
-
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 import { ChannelDto } from "./channelDto";
 import { PlanDto } from "./planDto";
 
-
-export class ChannelBillPlanDto extends DtoBase{
+export class ChannelBillPlanDto extends DtoBase {
   additionalDetails?: string;
   channelBillPlanDetails?: string;
   planStartDate?: Date;
@@ -12,10 +10,9 @@ export class ChannelBillPlanDto extends DtoBase{
   channelId?: number;
   planId?: number;
   channel?: ChannelDto;
-//  planId ?: PlanDto;
+  //  planId ?: PlanDto;
   plan?: PlanDto;
 }
-
 
 // const entityJson = {
 //   additionalDetails : "additionalDetails?",

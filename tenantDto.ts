@@ -1,9 +1,9 @@
 // import { Injectable } from "@nestjs/common";
 // import { ModulesContainer } from "@nestjs/core";
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 // import { DtoBase } from "framework/entities/DtoBase"
 
-export class TenantDto extends DtoBase{
+export class TenantDto extends DtoBase {
   tenant_idDto?: number;
   communityNameDto?: string;
   addressDto?: string;
@@ -11,7 +11,6 @@ export class TenantDto extends DtoBase{
   payment_infoDto?: string;
   subsciptionStartDateDto?: Date;
   subsciptionEndDateDto?: Date;
-
 }
 
 // const entityJson = {
@@ -59,17 +58,13 @@ export class TenantDto extends DtoBase{
 // module.exports.entityToDtoJson = entityToDtoJson;
 // module.exports.dtoToEntityJson = dtoToEntityJson;
 // export const Maps {
-  
-  
-  
-  
 
-  // constructor() {
-  //   this.entityJson = 
-  //   this.dtoJson = 
-  //   this.entityToDtoJson = 
-  //   this.dtoToEntityJson = 
+// constructor() {
+//   this.entityJson =
+//   this.dtoJson =
+//   this.entityToDtoJson =
+//   this.dtoToEntityJson =
 
-  // }
+// }
 
 // }

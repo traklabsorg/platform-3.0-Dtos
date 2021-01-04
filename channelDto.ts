@@ -1,17 +1,16 @@
-
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 import { CommunityDto } from "./communityDto";
 import { GroupDto } from "./groupDto";
 
-export class ChannelDto extends DtoBase{
-//channel_id?: number;
+export class ChannelDto extends DtoBase {
+  //channel_id?: number;
   title?: string;
   channelType?: string;
   channelDetails?: string;
-//groupId?: GroupDto;
+  //groupId?: GroupDto;
   isDraft?: string;
   tenantId?: number;
-  community?:CommunityDto;
+  community?: CommunityDto;
 }
 
 // const entityJson = {

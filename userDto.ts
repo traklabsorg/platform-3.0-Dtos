@@ -1,5 +1,5 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 import { CommunityDto } from "./communityDto";
 import { EnrolledMeetingsDto } from "./enrolledMeetingsDto";
 import { GroupUserDto } from "./groupUserDto";
@@ -8,7 +8,7 @@ import { LessonDataUserDto } from "./lessonDataUserDto";
 import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
-export class UserDto extends DtoBase{
+export class UserDto extends DtoBase {
   userName?: string;
   userType?: string;
   userDetails?: string;
@@ -21,12 +21,12 @@ export class UserDto extends DtoBase{
   externalTenantUserId: number;
   externalTenantUserAppId: number;
 
-//  liveContentUsers: LiveContentUserDto[];
-//  userMeetingProviders: UserMeetingProviderDto[];
-//  groupUsers: GroupUserDto[];
-//  enrolledMeetings: EnrolledMeetingsDto[];
-//  lessonDataReviews: LessonDataReviewDto[];
-//  lessonDataUsers: LessonDataUserDto[];
+  //  liveContentUsers: LiveContentUserDto[];
+  //  userMeetingProviders: UserMeetingProviderDto[];
+  //  groupUsers: GroupUserDto[];
+  //  enrolledMeetings: EnrolledMeetingsDto[];
+  //  lessonDataReviews: LessonDataReviewDto[];
+  //  lessonDataUsers: LessonDataUserDto[];
   communityId?: number;
   community?: CommunityDto;
   liveContents?: any;

@@ -1,10 +1,10 @@
-import { DtoBase } from "../platform-3.0-Framework/submodules/platform-3.0-Common/common/DtoBase";
+import { DtoBase } from "./DtoBase";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
-export class MeetingProviderDto extends DtoBase{
+export class MeetingProviderDto extends DtoBase {
   providerName?: string;
   providerDetails?: string;
-//  userMeetingProviders : UserMeetingProviderDto[];
+  //  userMeetingProviders : UserMeetingProviderDto[];
 }
 
 // const entityJson = {
