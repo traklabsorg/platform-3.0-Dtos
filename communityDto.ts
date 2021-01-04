@@ -13,9 +13,21 @@ export class CommunityDto extends DtoBase {
   communityAdditionalData?: string;
   communityUrl?: string;
 
-  isActive?: boolean;
-  //    users: UserDto[];
-  //    groups: GroupDto[];
+  isActive: boolean;
+  email: string;
+  alias: string;
+  publishedFrom: string;
+  publishedTill: string;
+  identityProviderDetails: string;
+  mobileAlias: string;
+  description: string;
+  themeName: string;
+  statusName: string;
+  client: string;
+  memberCount: number;
+
+  users: UserDto[];
+  groups: GroupDto[];
 }
 
 // const entityJson = {
