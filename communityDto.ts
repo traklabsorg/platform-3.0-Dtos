@@ -13,8 +13,8 @@ export class CommunityDto extends DtoBase {
   userQuotas?: string;
   communityAdditionalData?: CommunityAdditionalDataType;
   communityUrl?: string;
-  external_tenant_id?: number;
-  external_tenant_app_id?: number;
+  externalTenantId?: number;
+  externalTenantAppId?: number;
   users?: UserDto[];
   groups?: GroupDto[];
   channels?: ChannelDto[];
@@ -35,7 +35,6 @@ export interface CommunityAdditionalDataType {
   memberCount?: number;
 }
 
-
 // const entityJson = {
 //     communityName : "communityName?",
 //     address : "address?",
@@ -45,7 +44,7 @@ export interface CommunityAdditionalDataType {
 //     users : "users?",
 //     groups : "groups?",
 //   };
-  
+
 //   const Json = {
 //     communityName : "communityName?",
 //     address : "address?",
@@ -55,7 +54,7 @@ export interface CommunityAdditionalDataType {
 //     users : "users?",
 //     groups : "groups?",
 //   };
-  
+
 //   const entityToJson = {
 //     communityName : "communityName?",
 //     address : "address?",
@@ -65,7 +64,7 @@ export interface CommunityAdditionalDataType {
 //     users : "users?",
 //     groups : "groups?",
 //   };
-  
+
 //   const ToEntityJson= {
 //     communityName : "communityName?",
 //     address : "address?",
@@ -76,7 +75,7 @@ export interface CommunityAdditionalDataType {
 //     groups : "groups?",
 
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.Json = Json;
 //   module.exports.entityToJson = entityToJson;
