@@ -3,23 +3,38 @@ import { DtoBase } from "./DtoBase";
 import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
 
-
-export class CommunityDto extends DtoBase{
-    communityName?: string;
-    communityAdminId?: number;
-    address?: string;
-    paymentInfo?: string;
-    subscriptionStartDate?: Date;
-    subscriptionEndDate?: Date;
-    userQuotas?: string;
-    communityAdditionalData?: string;
-    communityUrl?: string;
-    users?: UserDto[];
-    groups?: GroupDto[];
-    channels?: ChannelDto[];
-//    liveContents?: LiveContentDto[];
-
+export class CommunityDto extends DtoBase {
+  communityName?: string;
+  communityAdminId?: number;
+  address?: string;
+  paymentInfo?: string;
+  subscriptionStartDate?: Date;
+  subscriptionEndDate?: Date;
+  userQuotas?: string;
+  communityAdditionalData?: CommunityAdditionalDataType;
+  communityUrl?: string;
+  external_tenant_id?: number;
+  external_tenant_app_id?: number;
+  users?: UserDto[];
+  groups?: GroupDto[];
+  channels?: ChannelDto[];
 }
+
+export interface CommunityAdditionalDataType {
+  isActive?: boolean;
+  client?: string;
+  email?: string;
+  alias?: string;
+  publishedFrom?: string;
+  publishedTill?: string;
+  identityProviderDetails?: string;
+  mobileAlias?: string;
+  description?: string;
+  themeName?: string;
+  statusName?: string;
+  memberCount?: number;
+}
+
 
 // const entityJson = {
 //     communityName : "communityName?",
