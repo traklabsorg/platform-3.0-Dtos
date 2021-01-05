@@ -1,14 +1,15 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
 import { DtoBase } from "./DtoBase";
 import { CommunityDto } from "./communityDto";
-import { EnrolledMeetingsDto } from "./enrolledMeetingsDto";
+import { EnrolledMeetingDto } from "./enrolledMeetingsDto";
 import { GroupUserDto } from "./groupUserDto";
 import { LessonDataReviewDto } from "./lessonDataReviewDto";
 import { LessonDataUserDto } from "./lessonDataUserDto";
 import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
+import { LiveContentDto } from "./liveContentDto";
 
-export class UserDto extends DtoBase {
+export class UserDto extends DtoBase{
   userName?: string;
   userType?: string;
   userDetails?: string;
@@ -17,19 +18,15 @@ export class UserDto extends DtoBase {
   isActive?: string;
   userAdditionalDetails?: string;
   lastLogonDateTime?: Date;
-  externalUserId: number;
-  externalTenantUserId: number;
-  externalTenantUserAppId: number;
-
-  //  liveContentUsers: LiveContentUserDto[];
-  //  userMeetingProviders: UserMeetingProviderDto[];
-  //  groupUsers: GroupUserDto[];
-  //  enrolledMeetings: EnrolledMeetingsDto[];
-  //  lessonDataReviews: LessonDataReviewDto[];
-  //  lessonDataUsers: LessonDataUserDto[];
+  liveContentUsers?: LiveContentUserDto[];
+  userMeetingProviders?: UserMeetingProviderDto[];
+  groupUsers?: GroupUserDto[];
+  enrolledMeetings?: EnrolledMeetingDto[];
+  lessonDataReviews?: LessonDataReviewDto[];
+  lessonDataUsers?: LessonDataUserDto[];
   communityId?: number;
   community?: CommunityDto;
-  liveContents?: any;
+  liveContents?: LiveContentDto;
 }
 
 // const entityJson = {

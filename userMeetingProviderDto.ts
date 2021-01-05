@@ -6,14 +6,14 @@ import { MeetingProviderDto } from "./meetingProviderDto";
 import { UserDto } from "./userDto";
 import { UserMeetingProviders_MeetingDto } from "./userMeetingProviders_meetingDto";
 
-export class UserMeetingProviderDto extends DtoBase {
+export class UserMeetingProviderDto extends DtoBase{
   Details?: string;
   userId?: number;
   meetingProviderId?: number;
-  //  userMeetingProvider_meetings: UserMeetingProviders_MeetingDto[];
+  userMeetingProvider_meetings?: UserMeetingProviders_MeetingDto[];
   user?: UserDto;
   meetingProvider?: MeetingProviderDto;
-  //  liveContents: LiveContentDto[];
+//  liveContents?: LiveContentDto[];
 }
 
 // const entityJson = {
@@ -21,15 +21,15 @@ export class UserMeetingProviderDto extends DtoBase {
 // };
 
 // const dtoJson = {
-
+  
 // };
 
 // const entityToDtoJson = {
-
+  
 // };
 
 // const dtoToEntityJson= {
-
+  
 // };
 
 // module.exports.entityJson = entityJson;

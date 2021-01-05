@@ -1,16 +1,26 @@
-import { DtoBase } from "./DtoBase";
-import { CommunityDto } from "./communityDto";
-import { GroupDto } from "./groupDto";
 
-export class ChannelDto extends DtoBase {
-  //channel_id?: number;
+import { ChannelBillPlanDto } from "./channelBillPlanDto";
+import { ChannelGroupDto } from "./channelGroupDto";
+import { CommunityDto } from "./communityDto";
+import { DtoBase } from "./DtoBase";
+import { GroupDto } from "./groupDto";
+import { LessonDataUserDto } from "./lessonDataUserDto";
+import { SectionDto } from "./sectionDto";
+
+export class ChannelDto extends DtoBase{
+//channel_id?: number;
   title?: string;
   channelType?: string;
   channelDetails?: string;
-  //groupId?: GroupDto;
+//groupId?: GroupDto;
   isDraft?: string;
   tenantId?: number;
-  community?: CommunityDto;
+  community?:CommunityDto;
+  channelBillPlans?: ChannelBillPlanDto[];
+  sections?: SectionDto[];
+  lessonDataUsers?: LessonDataUserDto[];
+  channelGroups?: ChannelGroupDto[];
+
 }
 
 // const entityJson = {

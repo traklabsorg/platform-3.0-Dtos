@@ -3,18 +3,20 @@ import { DtoBase } from "./DtoBase";
 // import { Subscription } from "rxjs";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionDto } from "./subscriptionDto";
+import { PaymentDto } from "./paymentDto";
 
-export class SubscriptionOrderDto extends DtoBase {
-  orderStatus?: string;
-  orderDateTime?: Date;
-  orderDetails?: string;
-  subscriptionId?: number;
-  subscription?: SubscriptionDto;
-  //    title: string;
-  //    channelType: string;
-  //    channelDetails: string;
-  //    subscriptionId: SubscriptionDto;
-  //    channelBillPlans: ChannelBillPlanDto[];
+export class SubscriptionOrderDto extends DtoBase{
+    orderStatus?: string;
+    orderDateTime?: Date;
+    orderDetails?: string;
+    subscriptionId?: number;
+    subscription?: SubscriptionDto;
+    payments?: PaymentDto[];
+//    title: string;
+//    channelType: string;
+//    channelDetails: string;
+//    subscriptionId: SubscriptionDto;
+//    channelBillPlans: ChannelBillPlanDto[];
 }
 
 // const entityJson = {
@@ -24,7 +26,7 @@ export class SubscriptionOrderDto extends DtoBase {
 //     subscriptionId : "subscriptionId?",
 //     channelBillPlans : "channelBillPlans?",
 //   };
-
+  
 //   const dtoJson = {
 //     titleDto : "titleDto?",
 //     channelTypeDto : "channelTypeDto?",
@@ -32,7 +34,7 @@ export class SubscriptionOrderDto extends DtoBase {
 //     subscriptionIdDto : "subscriptionIdDto?",
 //     channelBillPlansDto : "channelBillPlansDto?",
 //   };
-
+  
 //   const entityToDtoJson = {
 //     titleDto : "title?",
 //     channelTypeDto : "channelType?",
@@ -40,7 +42,7 @@ export class SubscriptionOrderDto extends DtoBase {
 //     subscriptionIdDto : "subscriptionId?",
 //     channelBillPlansDto : "channelBillPlans?",
 //   };
-
+  
 //   const dtoToEntityJson= {
 //     title : "titleDto?",
 //     channelType : "channelTypeDto?",
@@ -49,7 +51,7 @@ export class SubscriptionOrderDto extends DtoBase {
 //     channelBillPlans : "channelBillPlansDto?",
 
 //   };
-
+  
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

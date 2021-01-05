@@ -2,11 +2,11 @@
 import { DtoBase } from "./DtoBase";
 import { BusinessEventSubscriberDto } from "./businessEventSubscriberDto";
 
-export class ServiceConsumerDto extends DtoBase {
-  eventName?: string;
-  eventDetails?: string;
-  serviceConsumerDetails?: string;
-  //    businessEventSubscriber: BusinessEventSubscriberDto[];
+export class ServiceConsumerDto extends DtoBase{
+    eventName?: string;
+    eventDetails?: string;
+    serviceConsumerDetails?: string;
+    businessEventSubscribers?: BusinessEventSubscriberDto[];
 }
 
 // const entityJson = {
@@ -15,28 +15,28 @@ export class ServiceConsumerDto extends DtoBase {
 //     serviceConsumerDetails : "serviceConsumerDetails?",
 //     businessEventSubscriber : "businessEventSubscriber?",
 //   };
-
+  
 //   const dtoJson = {
 //     eventNameDto : "eventNameDto?",
 //     eventDetailsDto : "eventDetailsDto?",
 //     serviceConsumerDetailsDto : "serviceConsumerDetailsDto?",
 //     businessEventSubscriberDto : "businessEventSubscriberDto?",
 //   };
-
+  
 //   const entityToDtoJson = {
 //     eventNameDto : "eventName?",
 //     eventDetailsDto : "eventDetails?",
 //     serviceConsumerDetailsDto : "serviceConsumerDetails?",
-//     businessEventSubscriberDto : "businessEventSubscriber?",
+//     businessEventSubscriberDto : "businessEventSubscriber?",    
 //   };
-
+  
 //   const dtoToEntityJson= {
 //     eventName : "eventNameDto?",
 //     eventDetails : "eventDetailsDto?",
 //     serviceConsumerDetails : "serviceConsumerDetailsDto?",
-//     businessEventSubscriber : "businessEventSubscriberDto?",
+//     businessEventSubscriber : "businessEventSubscriberDto?",    
 //   };
-
+  
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

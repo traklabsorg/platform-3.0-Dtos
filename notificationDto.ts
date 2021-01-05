@@ -1,6 +1,7 @@
 import { DtoBase } from "./DtoBase";
 
-export class NotificationDto extends DtoBase {
+
+export class NotificationDto extends DtoBase{
   notificationType?: string;
   notificationData?: string;
 }
@@ -9,22 +10,22 @@ export class NotificationDto extends DtoBase {
 //     notificationType : "notificationType?",
 //     notificationData : "notificationData?",
 //   };
-
+  
 //   const dtoJson = {
 //     notificationTypeDto : "notificationTypeDto?",
 //     notificationDataDto : "notificationDataDto?",
 //   };
-
+  
 //   const entityToDtoJson = {
 //     notificationTypeDto : "notificationType?",
 //     notificationDataDto : "notificationData?",
 //   };
-
+  
 //   const dtoToEntityJson= {
 //     notificationType : "notificationTypeDto?",
 //     notificationData : "notificationDataDto?",
 //   };
-
+  
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

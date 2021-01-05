@@ -1,7 +1,7 @@
 import { DtoBase } from "./DtoBase";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
-export class UserMeetingProviders_MeetingDto extends DtoBase {
+export class UserMeetingProviders_MeetingDto extends DtoBase{
   meetingDetail?: string;
   meetingStartDateTime?: Date;
   meetingEndDateTime?: Date;
@@ -15,15 +15,15 @@ export class UserMeetingProviders_MeetingDto extends DtoBase {
 // };
 
 // const dtoJson = {
-
+  
 // };
 
 // const entityToDtoJson = {
-
+  
 // };
 
 // const dtoToEntityJson= {
-
+  
 // };
 
 // module.exports.entityJson = entityJson;

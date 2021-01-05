@@ -2,11 +2,12 @@
 import { DtoBase } from "./DtoBase";
 import { SectionDto } from "./sectionDto";
 
-export class ContentDto extends DtoBase {
-  contentType: string;
-  contentTemplateId: number;
-  contentDetails: string;
-  sectionId: SectionDto;
+
+export class ContentDto extends DtoBase{
+    contentType: string;
+    contentTemplateId: number;
+    contentDetails: string;
+    sectionId: SectionDto;
 }
 
 // const entityJson = {
@@ -15,28 +16,28 @@ export class ContentDto extends DtoBase {
 //     contentDetails : "contentDetails?",
 //     sectionId : "sectionId?",
 //   };
-
+  
 //   const dtoJson = {
 //     contentTypeDto : "contentTypeDto?",
 //     contentTemplateIdDto : "contentTemplateIdDto?",
 //     contentDetailsDto : "contentDetailsDto?",
 //     sectionIdDto : "sectionIdDto?",
 //   };
-
+  
 //   const entityToDtoJson = {
 //     contentTypeDto : "contentType?",
 //     contentTemplateIdDto : "contentTemplateId?",
 //     contentDetailsDto : "contentDetails?",
-//     sectionIdDto : "sectionId?",
+//     sectionIdDto : "sectionId?",    
 //   };
-
+  
 //   const dtoToEntityJson= {
 //     contentType : "contentTypeDto?",
 //     contentTemplateId : "contentTemplateIdDto?",
 //     contentDetails : "contentDetailsDto?",
 //     sectionId : "sectionIdDto?",
 //   };
-
+  
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

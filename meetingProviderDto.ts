@@ -1,10 +1,12 @@
 import { DtoBase } from "./DtoBase";
+import { LiveContentDto } from "./liveContentDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
-export class MeetingProviderDto extends DtoBase {
+export class MeetingProviderDto extends DtoBase{
   providerName?: string;
   providerDetails?: string;
-  //  userMeetingProviders : UserMeetingProviderDto[];
+  userMeetingProviders?: UserMeetingProviderDto[];
+  liveContents?: LiveContentDto[];
 }
 
 // const entityJson = {

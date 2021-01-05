@@ -1,7 +1,7 @@
 import { DtoBase } from "./DtoBase";
 import { PaymentCouponDto } from "./paymentCouponDto";
 
-export class CouponDto extends DtoBase {
+export class CouponDto extends DtoBase{
   couponCode?: string;
   validTill?: Date;
   usageCount?: number;
@@ -10,7 +10,7 @@ export class CouponDto extends DtoBase {
   couponType?: string;
   isActive?: boolean;
   couponDetails?: string;
-  //  paymentCoupons: PaymentCouponDto[];
+  paymentCoupons?: PaymentCouponDto[];
 }
 
 // const entityJson = {
@@ -21,7 +21,7 @@ export class CouponDto extends DtoBase {
 //     ddEntityId : "ddEntityId?",
 //     businessEventSubscriber : "businessEventSubscriber?"
 //   };
-
+  
 //   const dtoJson = {
 //     eventNameDto : "eventNameDto?",
 //     eventDetailsDto : "eventDetailsDto?",
@@ -30,7 +30,7 @@ export class CouponDto extends DtoBase {
 //     ddEntityIdDto : "ddEntityIdDto?",
 //     businessEventSubscriberDto : "businessEventSubscriberDto?"
 //   };
-
+  
 //   const entityToDtoJson = {
 //     eventNameDto : "eventName?",
 //     eventDetailsDto : "eventDetails?",
@@ -39,7 +39,7 @@ export class CouponDto extends DtoBase {
 //     ddEntityIdDto : "ddEntityId?",
 //     businessEventSubscriberDto : "businessEventSubscriber?"
 //   };
-
+  
 //   const dtoToEntityJson= {
 //     eventName : "eventNameDto?",
 //     eventDetails : "eventDetailsDto?",
@@ -48,7 +48,7 @@ export class CouponDto extends DtoBase {
 //     ddEntityId : "ddEntityIdDto?",
 //     businessEventSubscriber : "businessEventSubscriberDto?",
 //   };
-
+  
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

@@ -1,8 +1,11 @@
+
 import { DtoBase } from "./DtoBase";
 import { ChannelDto } from "./channelDto";
 import { PlanDto } from "./planDto";
+import { SubscriptionDto } from "./subscriptionDto";
 
-export class ChannelBillPlanDto extends DtoBase {
+
+export class ChannelBillPlanDto extends DtoBase{
   additionalDetails?: string;
   channelBillPlanDetails?: string;
   planStartDate?: Date;
@@ -10,9 +13,10 @@ export class ChannelBillPlanDto extends DtoBase {
   channelId?: number;
   planId?: number;
   channel?: ChannelDto;
-  //  planId ?: PlanDto;
   plan?: PlanDto;
+  subscriptions?: SubscriptionDto[];
 }
+
 
 // const entityJson = {
 //   additionalDetails : "additionalDetails?",
