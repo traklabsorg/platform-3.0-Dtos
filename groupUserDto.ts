@@ -2,8 +2,7 @@ import { DtoBase } from "./DtoBase";
 import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
 
-
-export class GroupUserDto extends DtoBase{
+export class GroupUserDto extends DtoBase {
   groupUserDetails?: string;
   groupId?: number;
   userId?: number;

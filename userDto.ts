@@ -9,7 +9,7 @@ import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 import { LiveContentDto } from "./liveContentDto";
 
-export class UserDto extends DtoBase{
+export class UserDto extends DtoBase {
   userName?: string;
   userType?: string;
   userDetails?: string;
@@ -27,6 +27,9 @@ export class UserDto extends DtoBase{
   communityId?: number;
   community?: CommunityDto;
   liveContents?: LiveContentDto;
+  externalUserId?: number;
+  externalTenantUserId?: number;
+  externalTenantUserAppId?: number;
 }
 
 // const entityJson = {
