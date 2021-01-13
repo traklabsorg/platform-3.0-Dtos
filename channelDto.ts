@@ -8,7 +8,7 @@ import { LessonDataUserDto } from "./lessonDataUserDto";
 import { SectionDto } from "./sectionDto";
 
 export class ChannelDto extends DtoBase{
-//channel_id?: number;
+//channel_id?: number;;
   title?: string;
   channelType?: string;
   channelDetails?: string;
