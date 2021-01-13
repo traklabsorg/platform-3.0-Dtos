@@ -1,5 +1,5 @@
 // import { Section } from "app/platform-3.0-Entities/section";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { SectionDto } from "./sectionDto";
 
 

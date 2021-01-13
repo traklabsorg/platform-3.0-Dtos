@@ -1,5 +1,5 @@
 // import { BusinessEventSubscriber } from "app/platform-3.0-Entities/businessEventSubscriber";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { BusinessEventSubscriberDto } from "./businessEventSubscriberDto";
 
 export class ServiceConsumerDto extends DtoBase{

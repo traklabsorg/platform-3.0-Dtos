@@ -1,4 +1,4 @@
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { UserDto } from "./userDto";
 import { UserMeetingProviders_MeetingDto } from "./userMeetingProviders_meetingDto";
 

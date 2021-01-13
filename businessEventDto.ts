@@ -1,7 +1,9 @@
 
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { BusinessEventSubscriberDto } from "./businessEventSubscriberDto";
 import { DdEntityDto } from "./ddEntitiesDto";
+
+
 // import { DtoBase } from "./DtoBase";
 
 export class BusinessEventDto extends DtoBase{

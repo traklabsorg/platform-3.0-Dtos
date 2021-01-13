@@ -1,4 +1,4 @@
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 
 export class UserMeetingProviders_MeetingDto extends DtoBase{

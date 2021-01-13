@@ -1,6 +1,6 @@
 // import { Channel } from "app/platform-3.0-Entities/channel";
 // import { LiveContent } from "app/platform-3.0-Entities/liveContent";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelDto } from "./channelDto";
 import { LessonDto } from "./lessonDto";
 import { LessonDataReviewDto } from "./lessonDataReviewDto";

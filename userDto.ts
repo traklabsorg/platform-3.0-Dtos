@@ -1,5 +1,5 @@
 // import { Tenant } from "app/platform-3.0-Entities/tenant";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { CommunityDto } from "./communityDto";
 import { EnrolledMeetingDto } from "./enrolledMeetingsDto";
 import { GroupUserDto } from "./groupUserDto";

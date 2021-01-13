@@ -1,5 +1,5 @@
 import { ChannelDto } from "./channelDto";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { LessonDataDto } from "./lessonDataDto";
 import { UserDto } from "./userDto";
 

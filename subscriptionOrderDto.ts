@@ -1,5 +1,5 @@
 // import { ChannelBillPlan } from "app/platform-3.0-Entities/channelBillPlan";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 // import { Subscription } from "rxjs";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionDto } from "./subscriptionDto";

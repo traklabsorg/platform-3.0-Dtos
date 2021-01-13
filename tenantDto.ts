@@ -1,6 +1,6 @@
 // import { Injectable } from "@nestjs/common";
 // import { ModulesContainer } from "@nestjs/core";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 // import { DtoBase } from "framework/entities/DtoBase"
 
 export class TenantDto extends DtoBase{

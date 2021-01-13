@@ -2,7 +2,7 @@
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { ChannelGroupDto } from "./channelGroupDto";
 import { CommunityDto } from "./communityDto";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { GroupDto } from "./groupDto";
 import { LessonDataUserDto } from "./lessonDataUserDto";
 import { SectionDto } from "./sectionDto";

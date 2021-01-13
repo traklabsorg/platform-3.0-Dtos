@@ -1,6 +1,6 @@
 // import { ChannelBillPlan } from "app/platform-3.0-Entities/channelBillPlan";
 // import { SubscriptionOrder } from "app/platform-3.0-Entities/subscriptionOrder";
-import { DtoBase } from "./DtoBase";
+import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
