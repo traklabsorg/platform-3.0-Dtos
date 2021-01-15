@@ -35,6 +35,8 @@ export interface CommunityAdditionalDataType {
   memberCount?: number;
 }
 
+
+
 // const entityJson = {
 //     communityName : "communityName?",
 //     address : "address?",
