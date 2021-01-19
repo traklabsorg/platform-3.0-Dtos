@@ -7,6 +7,7 @@ export class GroupUserDto extends DtoBase {
   groupId?: number;
   userId?: number;
   groupImage?: string;
+  roleIds?: Array<number>;
   group?: GroupDto;
   user?: UserDto;
 }

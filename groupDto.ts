@@ -5,18 +5,24 @@ import { CommunityDto } from "./communityDto";
 import { GroupUserDto } from "./groupUserDto";
 import { ChannelGroupDto } from "./channelGroupDto";
 
-export class GroupDto extends DtoBase{
+export class GroupDto extends DtoBase {
   groupName?: string;
   groupType?: string;
-  groupDetails?: string;
+  groupDetails?: GroupDetails;
   groupPayerType?: string;
   communityId?: number;
   isActive?: string;
   community?: CommunityDto;
   channelGroups?: ChannelGroupDto[];
-//  channels: ChannelDto[];
-  groupUsers : GroupUserDto[];
-//  community : CommunityDto;
+  //  channels: ChannelDto[];
+  groupUsers: GroupUserDto[];
+  //  community : CommunityDto;
+}
+
+interface GroupDetails {
+  description?: string;
+  coverImage?: string;
+  profileImage?: string;
 }
 
 // const entityJson = {

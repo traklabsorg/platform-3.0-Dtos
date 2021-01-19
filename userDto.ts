@@ -12,7 +12,7 @@ import { LiveContentDto } from "./liveContentDto";
 export class UserDto extends DtoBase {
   userName?: string;
   userType?: string;
-  userDetails?: string;
+  userDetails?: UserDetails;
   userEmail?: string;
   userImage?: string;
   isActive?: string;
@@ -30,6 +30,14 @@ export class UserDto extends DtoBase {
   externalUserId?: number;
   externalTenantUserId?: number;
   externalTenantUserAppId?: number;
+}
+
+interface UserDetails {
+  firstName?: string;
+  lastName?: string;
+  password?: string;
+  coverImage?: string;
+  profileImage?: string;
 }
 
 // const entityJson = {
