@@ -1,14 +1,13 @@
 import { ChannelDto } from "./channelDto";
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
-import { GroupDto } from "./groupDto";
+import { UserDto } from "./userDto";
 
 export class ChannelGroupDto extends DtoBase{
   //channel_id??: number;
+  isActive?:string;
   channelId?:number;
-  groupId?:number;
-  planId?: string;
+  userId?: number;
+  user?: UserDto;
   channel?: ChannelDto;
-  group?: GroupDto;
-  channelGroupDetails?: string;
 
 }
