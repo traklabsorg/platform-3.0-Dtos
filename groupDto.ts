@@ -19,10 +19,19 @@ export class GroupDto extends DtoBase {
   //  community : CommunityDto;
 }
 
+interface CreditCard {
+  cardType?: string;
+  nameOnCard?: string;
+  cardnumber?: string;
+  expiryMonth?: string;
+  cvv?: string;
+}
+
 interface GroupDetails {
   description?: string;
   coverImage?: string;
   profileImage?: string;
+  creditCards?: Array<CreditCard>;
 }
 
 // const entityJson = {

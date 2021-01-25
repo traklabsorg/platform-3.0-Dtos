@@ -5,18 +5,90 @@ import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 import { UserDto } from "./userDto";
 import { MeetingProviderDto } from "./meetingProviderDto";
 
-export class LiveContentDto extends DtoBase{
+export class LiveContentDto extends DtoBase {
   url?: string;
-  contentDetails?: string;
-  startDate?: Date;
-  endDate?: Date;
-  userMeetingProviderId?: number;
-  meetingProviderId?: number;
+  startDateTime?: Date;
+  duration?: string;
   user?: UserDto;
+  externalMeetingProviderUserId?: string;
+  hostUsers?: string;
+  contentDetails?: ContentDetails;
+  meetingProviderId?: number;
   meetingProvider?: MeetingProviderDto;
-//  communityId: CommunityDto;
-//  userMeetingProvider: UserMeetingProviderDto;
   liveContentUsers?: LiveContentUserDto[];
+
+  communityId: CommunityDto;
+  userMeetingProvider: UserMeetingProviderDto;
+}
+
+export class ContentDetails {
+  webinarCoverImage: string;
+  topic: string;
+  description: string;
+  date: Date;
+  time: string;
+  durationHours: string;
+  durationMinutes: string;
+  numberOfInvitees: string;
+  registrationType: string;
+  isMeetingSecure: string;
+  password: string;
+  isWaitingRoomEnabled: string;
+  hostVideo: HostVideo;
+  hostAudio: HostAudio;
+  participantVideo: ParticipantVideo;
+  allowParticipantsToJoinAnytime: boolean;
+  showAllParticipantsName: boolean;
+  muteParticipantsUponEntry: boolean;
+  requireAuthenticationToJoin: boolean;
+  automaticallyRecordMeeting: boolean;
+  recordingType: boolean;
+  alternativeHosts: string;
+  selectedMemberOrGroupList: Member[];
+}
+
+export interface Member {
+  id?: number;
+  groupId: number;
+  name?: string;
+  image: string;
+  isGroup: boolean;
+  isSelected?: boolean;
+  groupName?: string;
+  count: number;
+  email?: string;
+}
+
+export enum NumberOfInvitees {
+  upToHundred = "1-100",
+  upToFiveHundred = "101-500",
+  upToThousand = "501-1000",
+}
+
+export enum TypeOfRegistration {
+  public = "public",
+  private = "private",
+}
+
+export enum HostVideo {
+  on = "on",
+  off = "off",
+}
+
+export enum ParticipantVideo {
+  on = "on",
+  off = "off",
+}
+
+export enum HostAudio {
+  telephone = "telephone",
+  computerAudio = "computerAudio",
+  both = "both",
+}
+
+export enum RecordingType {
+  cloud = "cloud",
+  local = "local",
 }
 
 // const entityJson = {
@@ -25,28 +97,28 @@ export class LiveContentDto extends DtoBase{
 //     liveContentId : "liveContentId?",
 //     userMeetingProviderId : "userMeetingProviderId?",
 //   };
-  
+
 //   const dtoJson = {
 //     urlDto : "urlDto?",
 //     contentDetailsDto : "contentDetailsDto?",
 //     liveContentIdDto : "liveContentIdDto?",
 //     userMeetingProviderIdDto : "userMeetingProviderIdDto?",
 //   };
-  
+
 //   const entityToDtoJson = {
 //     urlDto : "url?",
 //     contentDetailsDto : "contentDetails?",
 //     liveContentIdDto : "liveContentId?",
 //     userMeetingProviderIdDto : "userMeetingProviderId?",
 //   };
-  
+
 //   const dtoToEntityJson= {
 //     url : "urlDto?",
 //     contentDetails : "contentDetailsDto?",
 //     liveContentId : "liveContentIdDto?",
 //     userMeetingProviderId : "userMeetingProviderIdDto?",
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;
