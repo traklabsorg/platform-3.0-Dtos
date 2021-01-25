@@ -13,7 +13,7 @@ export class ChannelDto extends DtoBase {
   channelDetails?: ChannelDetails;
   //groupId?: GroupDto;
   isDraft?: string;
-  tenantId?: number;
+  communityId?: number;
   community?: CommunityDto;
   channelBillPlans?: ChannelBillPlanDto[];
   sections?: SectionDto[];
