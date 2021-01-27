@@ -42,7 +42,7 @@ export class ContentDetails {
   muteParticipantsUponEntry: boolean;
   requireAuthenticationToJoin: boolean;
   automaticallyRecordMeeting: boolean;
-  recordingType: boolean;
+  recordingType: RecordingType;
   alternativeHosts: string;
   selectedMemberOrGroupList: Member[];
 }
