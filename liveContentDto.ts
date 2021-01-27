@@ -81,8 +81,8 @@ export enum ParticipantVideo {
 }
 
 export enum HostAudio {
-  telephone = "telephone",
-  computerAudio = "computerAudio",
+  telephone = "telephony",
+  computerAudio = "voip",
   both = "both",
 }
 
