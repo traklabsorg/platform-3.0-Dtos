@@ -8,11 +8,14 @@ import { MeetingProviderDto } from "./meetingProviderDto";
 export class LiveContentDto extends DtoBase {
   url?: string;
   startDateTime?: Date;
-  duration?: string;
+  duration?: number;
   user?: UserDto;
   externalMeetingProviderUserId?: string;
+  userId: number;
   hostUsers?: string;
   contentDetails?: ContentDetails;
+  webinarDetails?: string;
+  typeOfRegistration: TypeOfRegistration;
   meetingProviderId?: number;
   meetingProvider?: MeetingProviderDto;
   liveContentUsers?: LiveContentUserDto[];
@@ -27,6 +30,7 @@ export class ContentDetails {
   description: string;
   date: Date;
   time: string;
+  timeZone: string;
   durationHours: string;
   durationMinutes: string;
   numberOfInvitees: string;
