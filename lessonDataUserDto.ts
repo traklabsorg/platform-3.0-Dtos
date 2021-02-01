@@ -4,7 +4,7 @@ import { LessonDataDto } from "./lessonDataDto";
 import { UserDto } from "./userDto";
 
 export class LessonDataUserDto extends DtoBase{
-    additonalDetails?: string;
+    additionalDetails?: string;
     userId?: number;
     lessonDataId?: number;
     user?: UserDto;
