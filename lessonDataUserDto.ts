@@ -6,9 +6,9 @@ import { UserDto } from "./userDto";
 export class LessonDataUserDto extends DtoBase{
     additonalDetails?: string;
     userId?: number;
-    contentId?: number;
+    lessonDataId?: number;
     user?: UserDto;
-    channel?: ChannelDto;
+    // channel?: ChannelDto;
     lessonData?: LessonDataDto;
 //    content: LessonDataDto;
 }
