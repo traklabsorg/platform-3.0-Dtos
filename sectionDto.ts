@@ -5,10 +5,9 @@ import { ChannelDto } from "./channelDto";
 import { LessonDto } from "./lessonDto";
 import { LessonDataReviewDto } from "./lessonDataReviewDto";
 
-
-export class SectionDto extends DtoBase{
+export class SectionDto extends DtoBase {
   title?: string;
-  sectionDetails?: string;
+  sectionDetails?: SectionDetails;
   sectionType?: string;
   channelId?: number;
   channel?: ChannelDto;
@@ -18,34 +17,40 @@ export class SectionDto extends DtoBase{
   liveContents?: string[];
 }
 
+class SectionDetails {
+  description?: string;
+  isPublished?: boolean;
+  isFeatured?: boolean;
+}
+
 // const entityJson = {
 //     title : "title?",
 //     channelId : "channelId?",
 //     contents : "contents?",
 //     liveContents : "liveContents?",
 //   };
-  
+
 //   const dtoJson = {
 //     titleDto : "titleDto?",
 //     channelIdDto : "channelIdDto?",
 //     contentsDto : "contentsDto?",
 //     liveContentsDto : "liveContentsDto?",
 //   };
-  
+
 //   const entityToDtoJson = {
 //     titleDto : "title?",
 //     channelIdDto : "channelId?",
 //     contentsDto : "contents?",
 //     liveContentsDto : "liveContents?",
 //   };
-  
+
 //   const dtoToEntityJson= {
 //     title : "titleDto?",
 //     channelId : "channelIdDto?",
 //     contents : "contentsDto?",
 //     liveContents : "liveContentsDto?",
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

@@ -9,7 +9,7 @@ export class LessonDataDto extends DtoBase{
     isSubmitted?: string;
     isDraft?: string;
     lessonDetails?: string;
-    contentId?: number;
+    lessonId?: number;
     content?: LessonDto;
     lessonDataUsers: LessonDataUserDto[];
 }

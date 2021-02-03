@@ -9,9 +9,9 @@ export class LiveContentDto extends DtoBase {
   url?: string;
   startDateTime?: Date;
   duration?: number;
-  userId?: number;
   user?: UserDto;
   externalMeetingProviderUserId?: string;
+  userId: number;
   hostUsers?: string;
   contentDetails?: ContentDetails;
   webinarDetails?: WebinarDetails;
