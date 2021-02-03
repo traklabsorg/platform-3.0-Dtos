@@ -1,3 +1,5 @@
+import { chargingTypes } from "assets/createchannel";
+
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { ChannelGroupDto } from "./channelGroupDto";
 import { CommunityDto } from "./communityDto";
@@ -13,11 +15,11 @@ export class ChannelDto extends DtoBase {
   channelDetails?: ChannelDetails;
   //groupId?: GroupDto;
   isDraft?: string;
-  communityId?: number;
+  tenantId?: number;
   community?: CommunityDto;
   channelBillPlans?: ChannelBillPlanDto[];
   sections?: SectionDto[];
-  // lessonDataUsers?: LessonDataUserDto[];
+  lessonDataUsers?: LessonDataUserDto[];
   channelGroups?: ChannelGroupDto[];
 }
 

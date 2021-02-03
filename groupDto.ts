@@ -23,7 +23,7 @@ interface CreditCard {
   cardType?: string;
   nameOnCard?: string;
   cardnumber?: string;
-  expiryMonth?: string;
+  expiryDate?: string;
   cvv?: string;
 }
 
