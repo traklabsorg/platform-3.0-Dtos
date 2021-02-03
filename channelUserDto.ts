@@ -7,6 +7,7 @@ export class ChannelUserDto extends DtoBase{
   isActive?:string;
   channelId?:number;
   userId?: number;
+  channelUserAdditionalDetails?:string;
   user?: UserDto;
   channel?: ChannelDto;
 

@@ -6,7 +6,7 @@ export class LessonDataReviewDto extends DtoBase{
     reviewDetails?: string;
     reviewStatus?: string;
     userId?: number;
-    sectionId?: number;
+    lessonDataId?: number;
     user?: UserDto;
     section?: SectionDto;
 }

@@ -10,5 +10,6 @@ export class ChannelGroupDto extends DtoBase{
   channel?: ChannelDto;
   group?: GroupDto;
   channelGroupDetails?: string;
+  channelGroupRevokeUsers?: string;
 
 }
