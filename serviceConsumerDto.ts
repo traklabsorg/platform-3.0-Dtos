@@ -3,8 +3,8 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { BusinessEventSubscriberDto } from "./businessEventSubscriberDto";
 
 export class ServiceConsumerDto extends DtoBase{
-    eventName?: string;
-    eventDetails?: string;
+    serviceConsumerName?: string;
+    serviceConsumerType?: string;
     serviceConsumerDetails?: string;
     businessEventSubscribers?: BusinessEventSubscriberDto[];
 }
