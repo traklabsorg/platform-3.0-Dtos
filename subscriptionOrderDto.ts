@@ -11,7 +11,7 @@ export class SubscriptionOrderDto extends DtoBase{
     orderDetails?: string;
     subscriptionId?: number;
     subscription?: SubscriptionDto;
-    payments?: PaymentDto[];
+    payment?: PaymentDto;
 //    title: string;
 //    channelType: string;
 //    channelDetails: string;

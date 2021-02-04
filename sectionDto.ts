@@ -12,7 +12,7 @@ export class SectionDto extends DtoBase {
   channelId?: number;
   channel?: ChannelDto;
   lessons?: LessonDto[];
-  lessonDataReview?: LessonDataReviewDto;
+  sectionReviews?: SectionReviewDto[];
   contents?: string[];
   liveContents?: string[];
 }

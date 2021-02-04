@@ -5,6 +5,7 @@ import { PaymentCouponDto } from "./paymentCouponDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
 export class PaymentDto extends DtoBase{
+  userId?: number;
   paymentStatus?: string;
   paymentMethod?: string;
   paymentCurrency?: string;
@@ -12,8 +13,10 @@ export class PaymentDto extends DtoBase{
   transactionDateTime?: Date;
   paymentDetails?: string;
   subscriptionOrderId?: number;
+  couponIds?: number[];
   subscriptionOrder?: SubscriptionOrderDto;
   paymentCoupons?: PaymentCouponDto[];
+  user?: UserDto;
 }
 
 // const entityJson = {

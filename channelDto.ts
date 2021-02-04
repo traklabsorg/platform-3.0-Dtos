@@ -14,13 +14,13 @@ export class ChannelDto extends DtoBase {
   channelType?: string;
   channelDetails?: ChannelDetails;
   //groupId?: GroupDto;
+  communityId?: number;
   isDraft?: string;
-  tenantId?: number;
   community?: CommunityDto;
   channelBillPlans?: ChannelBillPlanDto[];
   sections?: SectionDto[];
-  lessonDataUsers?: LessonDataUserDto[];
   channelGroups?: ChannelGroupDto[];
+  channelUsers?: ChannelUserDto[];
 }
 
 interface ChannelDetails {

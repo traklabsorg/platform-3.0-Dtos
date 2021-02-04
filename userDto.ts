@@ -26,10 +26,13 @@ export class UserDto extends DtoBase {
   lessonDataUsers?: LessonDataUserDto[];
   communityId?: number;
   community?: CommunityDto;
-  liveContents?: LiveContentDto;
+  liveContents?: LiveContentDto[];
   externalUserId?: number;
   externalTenantUserId?: number;
   externalTenantUserAppId?: number;
+  channelUsers?: ChannelUserDto[];
+  sectionReviews?: SectionReviewDto[];
+  payments: PaymentDto[];
 }
 
 interface UserDetails {

@@ -12,9 +12,11 @@ export class CommunityDto extends DtoBase {
   subscriptionEndDate?: Date;
   userQuotas?: string;
   communityAdditionalData?: CommunityAdditionalDataType;
+  extraData?: string;
   communityUrl?: string;
   externalTenantId?: number;
   externalTenantAppId?: number;
+  isActive?: boolean;
   users?: UserDto[];
   groups?: GroupDto[];
   channels?: ChannelDto[];

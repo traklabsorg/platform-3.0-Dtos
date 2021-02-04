@@ -8,5 +8,5 @@ export class LessonDataReviewDto extends DtoBase{
     userId?: number;
     lessonDataId?: number;
     user?: UserDto;
-    section?: SectionDto;
+    lessonData?: LessonDataDto;
 }
