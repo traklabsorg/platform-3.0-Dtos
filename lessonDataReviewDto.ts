@@ -1,5 +1,5 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
-import { SectionDto } from "./sectionDto";
+import { LessonDataDto } from "./lessonDataDto";
 import { UserDto } from "./userDto";
 
 export class LessonDataReviewDto extends DtoBase{
@@ -8,5 +8,5 @@ export class LessonDataReviewDto extends DtoBase{
     userId?: number;
     lessonDataId?: number;
     user?: UserDto;
-    section?: SectionDto;
+    lessonData?: LessonDataDto;
 }
