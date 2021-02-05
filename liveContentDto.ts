@@ -12,6 +12,7 @@ export class LiveContentDto extends DtoBase {
   user?: UserDto;
   externalMeetingProviderUserId?: string;
   userId?: number;
+  recordingURL?: string;
   hostUsers?: string;
   contentDetails?: ContentDetails;
   webinarDetails?: WebinarDetails;
@@ -19,9 +20,6 @@ export class LiveContentDto extends DtoBase {
   meetingProviderId?: number;
   meetingProvider?: MeetingProviderDto;
   liveContentUsers?: LiveContentUserDto[];
-
-  
-  
 }
 
 export class WebinarDetails {

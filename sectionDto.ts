@@ -4,6 +4,7 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelDto } from "./channelDto";
 import { LessonDto } from "./lessonDto";
 import { LessonDataReviewDto } from "./lessonDataReviewDto";
+import { SectionReviewDto } from "./sectionReviewDto";
 
 export class SectionDto extends DtoBase {
   title?: string;
