@@ -51,7 +51,7 @@ export class ContentDetails {
   durationHours: string;
   durationMinutes: string;
   numberOfInvitees: string;
-  registrationType: string;
+  registrationType: TypeOfRegistration;
   isMeetingSecure: string;
   password: string;
   isWaitingRoomEnabled: string;
