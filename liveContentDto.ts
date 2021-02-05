@@ -6,23 +6,21 @@ import { UserDto } from "./userDto";
 import { MeetingProviderDto } from "./meetingProviderDto";
 
 export class LiveContentDto extends DtoBase {
+  updateExternal?: boolean;
   url?: string;
   startDateTime?: Date;
   duration?: number;
   user?: UserDto;
   externalMeetingProviderUserId?: string;
-  userId: number;
+  userId?: number;
+  recordingURL?: string;
   hostUsers?: string;
   contentDetails?: ContentDetails;
   webinarDetails?: WebinarDetails;
-  typeOfRegistration: TypeOfRegistration;
+  typeOfRegistration?: TypeOfRegistration;
   meetingProviderId?: number;
-  recordingURL?: string;
   meetingProvider?: MeetingProviderDto;
   liveContentUsers?: LiveContentUserDto[];
-
-  communityId: CommunityDto;
-  userMeetingProvider: UserMeetingProviderDto;
 }
 
 export class WebinarDetails {
@@ -47,16 +45,16 @@ export class ContentDetails {
   webinarCoverImage: string;
   topic: string;
   description: string;
-  date: string;
+  date: Date;
   time: string;
   timeZone: string;
   durationHours: string;
   durationMinutes: string;
   numberOfInvitees: string;
   registrationType: string;
-  isMeetingSecure: boolean;
+  isMeetingSecure: string;
   password: string;
-  isWaitingRoomEnabled: boolean;
+  isWaitingRoomEnabled: string;
   hostVideo: HostVideo;
   hostAudio: HostAudio;
   participantVideo: ParticipantVideo;
@@ -68,7 +66,6 @@ export class ContentDetails {
   recordingType: RecordingType;
   alternativeHosts: string;
   selectedMemberOrGroupList: Member[];
-  selectedMembers: Member[];
 }
 
 export interface Member {

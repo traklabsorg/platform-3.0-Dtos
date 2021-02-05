@@ -6,7 +6,6 @@ export class ChannelGroupDto extends DtoBase{
   //channel_id??: number;
   channelId?:number;
   groupId?:number;
-  planId?: string;
   channel?: ChannelDto;
   group?: GroupDto;
   channelGroupDetails?: string;

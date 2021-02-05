@@ -3,8 +3,10 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { PaymentCouponDto } from "./paymentCouponDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
+import { UserDto } from "./userDto";
 
-export class PaymentDto extends DtoBase{
+export class PaymentDto extends DtoBase {
+  userId?: number;
   paymentStatus?: string;
   paymentMethod?: string;
   paymentCurrency?: string;
@@ -12,8 +14,10 @@ export class PaymentDto extends DtoBase{
   transactionDateTime?: Date;
   paymentDetails?: string;
   subscriptionOrderId?: number;
+  couponIds?: number[];
   subscriptionOrder?: SubscriptionOrderDto;
   paymentCoupons?: PaymentCouponDto[];
+  user?: UserDto;
 }
 
 // const entityJson = {
@@ -24,7 +28,7 @@ export class PaymentDto extends DtoBase{
 //     ddEntityId : "ddEntityId?",
 //     businessEventSubscriber : "businessEventSubscriber?"
 //   };
-  
+
 //   const dtoJson = {
 //     eventNameDto : "eventNameDto?",
 //     eventDetailsDto : "eventDetailsDto?",
@@ -33,7 +37,7 @@ export class PaymentDto extends DtoBase{
 //     ddEntityIdDto : "ddEntityIdDto?",
 //     businessEventSubscriberDto : "businessEventSubscriberDto?"
 //   };
-  
+
 //   const entityToDtoJson = {
 //     eventNameDto : "eventName?",
 //     eventDetailsDto : "eventDetails?",
@@ -42,7 +46,7 @@ export class PaymentDto extends DtoBase{
 //     ddEntityIdDto : "ddEntityId?",
 //     businessEventSubscriberDto : "businessEventSubscriber?"
 //   };
-  
+
 //   const dtoToEntityJson= {
 //     eventName : "eventNameDto?",
 //     eventDetails : "eventDetailsDto?",
@@ -51,7 +55,7 @@ export class PaymentDto extends DtoBase{
 //     ddEntityId : "ddEntityIdDto?",
 //     businessEventSubscriber : "businessEventSubscriberDto?",
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

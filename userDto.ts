@@ -8,6 +8,9 @@ import { LessonDataUserDto } from "./lessonDataUserDto";
 import { LiveContentUserDto } from "./liveContentUserDto";
 import { UserMeetingProviderDto } from "./userMeetingProviderDto";
 import { LiveContentDto } from "./liveContentDto";
+import { ChannelUserDto } from "./channelUserDto";
+import { SectionReviewDto } from "./sectionReviewDto";
+import { PaymentDto } from "./paymentDto";
 
 export class UserDto extends DtoBase {
   userName?: string;
@@ -26,10 +29,13 @@ export class UserDto extends DtoBase {
   lessonDataUsers?: LessonDataUserDto[];
   communityId?: number;
   community?: CommunityDto;
-  liveContents?: LiveContentDto;
+  liveContents?: LiveContentDto[];
   externalUserId?: number;
   externalTenantUserId?: number;
   externalTenantUserAppId?: number;
+  channelUsers?: ChannelUserDto[];
+  sectionReviews?: SectionReviewDto[];
+  payments: PaymentDto[];
 }
 
 interface UserDetails {
