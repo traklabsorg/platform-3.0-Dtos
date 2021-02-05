@@ -6,6 +6,7 @@ import { UserDto } from "./userDto";
 import { MeetingProviderDto } from "./meetingProviderDto";
 
 export class LiveContentDto extends DtoBase {
+  updateExternal?: boolean;
   url?: string;
   startDateTime?: Date;
   duration?: number;
