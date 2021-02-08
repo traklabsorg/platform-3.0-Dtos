@@ -45,16 +45,16 @@ export class ContentDetails {
   webinarCoverImage: string;
   topic: string;
   description: string;
-  date: Date;
+  date: string;
   time: string;
   timeZone: string;
   durationHours: string;
   durationMinutes: string;
   numberOfInvitees: string;
   registrationType: TypeOfRegistration;
-  isMeetingSecure: string;
+  isMeetingSecure: boolean;
   password: string;
-  isWaitingRoomEnabled: string;
+  isWaitingRoomEnabled: boolean;
   hostVideo: HostVideo;
   hostAudio: HostAudio;
   participantVideo: ParticipantVideo;
@@ -66,6 +66,7 @@ export class ContentDetails {
   recordingType: RecordingType;
   alternativeHosts: string;
   selectedMemberOrGroupList: Member[];
+  selectedMembers: Member[];
 }
 
 export interface Member {
