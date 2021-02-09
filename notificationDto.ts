@@ -2,9 +2,20 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 
 export class NotificationDto extends DtoBase{
-  notificationType?: string;
+  notificationType?: NotificationType;
   notificationData?: string;
+  userId?: string;
+  isRead?: boolean; 
+  dateTime?: Date;
 }
+
+enum NotificationType{
+  email = "email",
+  sms = "sms",
+  web = "web",
+  mobile = "mobile"
+}
+
 
 // const entityJson = {
 //     notificationType : "notificationType?",
