@@ -11,7 +11,18 @@ export class LessonDataDto extends DtoBase {
   isDraft?: string;
   lessonDetails?: string;
   lessonId?: number;
-  content?: LessonDto;
+  lesson?: LessonDto;
   lessonDataUsers?: LessonDataUserDto[];
   lessonDataReviews?: LessonDataReviewDto[];
+}
+
+
+export enum ContentTypeDataField {
+    Text="text",
+    Image="image",
+    Video="video",
+    Pdf="files",
+    Link="links",
+    Poll="poll",
+    Quiz="quiz",
 }
