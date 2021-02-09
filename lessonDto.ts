@@ -4,6 +4,7 @@ import { SectionDto } from "./sectionDto";
 
 export class LessonDto extends DtoBase {
   contentType?: string;
+  title?: string;
   contentTemplateId?: number;
   contentDetails?: ContentDetails;
   sequence?: string;
@@ -17,6 +18,5 @@ export class LessonDto extends DtoBase {
 class ContentDetails {
   isPublished?: boolean;
   profileImage?: string;
-  title?: string;
   isFeatured?: boolean;
 }
