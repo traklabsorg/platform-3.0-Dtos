@@ -9,8 +9,8 @@ export class CouponDto extends DtoBase{
   usageLimit?: number;
   couponType?: string;
   isActive?: boolean;
-  couponDetails?: string;
-  paymentCoupons?: PaymentCouponDto[];
+  couponDetail?: string;
+  paymentCoupon?: PaymentCouponDto[];
 }
 
 // const entityJson = {

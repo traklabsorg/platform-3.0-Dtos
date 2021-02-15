@@ -15,7 +15,7 @@ export class SubscriptionDto extends DtoBase{
     channelBillPlanId?: number;
 //    channelBillPlanId?: ChannelBillPlanDto;
     channelBillPlan?: ChannelBillPlanDto;
-    subscriptionOrders?: SubscriptionOrderDto[];
+    subscriptionOrder?: SubscriptionOrderDto[];
 }
 
 // const entityJson = {

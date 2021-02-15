@@ -16,7 +16,7 @@ export class PaymentDto extends DtoBase {
   subscriptionOrderId?: number;
   couponIds?: number[];
   subscriptionOrder?: SubscriptionOrderDto;
-  paymentCoupons?: PaymentCouponDto[];
+  paymentCoupon?: PaymentCouponDto[];
   user?: UserDto;
 }
 

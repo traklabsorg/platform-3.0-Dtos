@@ -6,7 +6,7 @@ export class MeetingProviderDto extends DtoBase{
   providerName?: string;
   providerDetails?: string;
   userMeetingProviders?: UserMeetingProviderDto[];
-  liveContents?: LiveContentDto[];
+  liveContent?: LiveContentDto[];
 }
 
 // const entityJson = {

@@ -12,8 +12,8 @@ export class LessonDataDto extends DtoBase {
   lessonDetails?: string;
   lessonId?: number;
   lesson?: LessonDto;
-  lessonDataUsers?: LessonDataUserDto[];
-  lessonDataReviews?: LessonDataReviewDto[];
+  lessonDataUser?: LessonDataUserDto[];
+  lessonDataReview?: LessonDataReviewDto[];
 }
 
 

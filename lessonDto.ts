@@ -11,7 +11,7 @@ export class LessonDto extends DtoBase {
   isMandatorySequence?: string;
   sectionId?: number;
   section?: SectionDto;
-  lessonDatas?: LessonDataDto[];
+  lessonData?: LessonDataDto[];
 }
 
 class ContentDetails {

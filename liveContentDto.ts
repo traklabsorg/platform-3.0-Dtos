@@ -20,7 +20,7 @@ export class LiveContentDto extends DtoBase {
   typeOfRegistration?: TypeOfRegistration;
   meetingProviderId?: number;
   meetingProvider?: MeetingProviderDto;
-  liveContentUsers?: LiveContentUserDto[];
+  liveContentUser?: LiveContentUserDto[];
 }
 
 export class WebinarDetails {

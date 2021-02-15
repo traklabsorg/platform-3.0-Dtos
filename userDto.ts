@@ -21,21 +21,21 @@ export class UserDto extends DtoBase {
   isActive?: string;
   userAdditionalDetails?: string;
   lastLogonDateTime?: Date;
-  liveContentUsers?: LiveContentUserDto[];
-  userMeetingProviders?: UserMeetingProviderDto[];
-  groupUsers?: GroupUserDto[];
-  enrolledMeetings?: EnrolledMeetingDto[];
-  lessonDataReviews?: LessonDataReviewDto[];
-  lessonDataUsers?: LessonDataUserDto[];
+  liveContentUser?: LiveContentUserDto[];
+  userMeetingProvider?: UserMeetingProviderDto[];
+  groupUser?: GroupUserDto[];
+  enrolledMeeting?: EnrolledMeetingDto[];
+  lessonDataReview?: LessonDataReviewDto[];
+  lessonDataUser?: LessonDataUserDto[];
   communityId?: number;
   community?: CommunityDto;
-  liveContents?: LiveContentDto[];
+  liveContent?: LiveContentDto[];
   externalUserId?: number;
   externalTenantUserId?: number;
   externalTenantUserAppId?: number;
-  channelUsers?: ChannelUserDto[];
-  sectionReviews?: SectionReviewDto[];
-  payments: PaymentDto[];
+  channelUser?: ChannelUserDto[];
+  sectionReview?: SectionReviewDto[];
+  payment: PaymentDto[];
 }
 
 interface UserDetails {

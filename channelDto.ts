@@ -16,10 +16,10 @@ export class ChannelDto extends DtoBase {
   communityId?: number;
   isDraft?: string;
   community?: CommunityDto;
-  channelBillPlans?: ChannelBillPlanDto[];
-  sections?: SectionDto[];
-  channelGroups?: ChannelGroupDto[];
-  channelUsers?: ChannelUserDto[];
+  channelBillPlan?: ChannelBillPlanDto[];
+  section?: SectionDto[];
+  channelGroup?: ChannelGroupDto[];
+  channelUser?: ChannelUserDto[];
 }
 
 interface ChannelDetails {
