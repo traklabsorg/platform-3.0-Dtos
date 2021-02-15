@@ -22,9 +22,11 @@ export class ChannelDto extends DtoBase {
   channelUser?: ChannelUserDto[];
 }
 
-interface ChannelDetails {
+export class ChannelDetails {
   description?: string;
   chargingType?: string;
+  profileImage?: string;
+  coverImage?: string;
 }
 
 // const entityJson = {
