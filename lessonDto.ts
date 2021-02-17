@@ -10,8 +10,10 @@ export class LessonDto extends DtoBase {
   sequence?: string;
   publishDate?: string;
   isMandatorySequence?: string;
+  isFeatured?:boolean;
   sectionId?: number;
   section?: SectionDto;
+  collaborators?:number[];
   lessonData?: LessonDataDto[];
 }
 
