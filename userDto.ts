@@ -11,6 +11,7 @@ import { LiveContentDto } from "./liveContentDto";
 import { ChannelUserDto } from "./channelUserDto";
 import { SectionReviewDto } from "./sectionReviewDto";
 import { PaymentDto } from "./paymentDto";
+import { RequestModel } from "submodules/platform-3.0-Entities/submodules/platform-3.0-Framework/submodules/platform-3.0-Common/common/RequestModel";
 
 export class UserDto extends DtoBase {
   userName?: string;
@@ -38,12 +39,34 @@ export class UserDto extends DtoBase {
   payments: PaymentDto[];
 }
 
-interface UserDetails {
+export class UserDetails {
   firstName?: string;
   lastName?: string;
   password?: string;
   coverImage?: string;
   profileImage?: string;
+  encryptedData?:EncryptedData;
+}
+
+export class EncryptedData{
+  data?: RequestModel<GroupUserDto>;
+  keyLength?: number;
+  key?: any;
+  algorithm?: string;
+  iv?: any;
+  password?: string;
+  date?: Date;
+
+  constructor(data?:RequestModel<GroupUserDto>,keyLength?:number,key?:any,algorithm?:string,iv?:any,password?:string,date?:Date)
+  {
+    this.data = data;
+    this.keyLength = keyLength;
+    this.key = key;
+    this.algorithm = algorithm;
+    this.iv = iv;
+    this.password = password;
+    this.date = date;
+  }
 }
 
 // const entityJson = {
