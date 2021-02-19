@@ -16,15 +16,17 @@ export class ChannelDto extends DtoBase {
   communityId?: number;
   isDraft?: string;
   community?: CommunityDto;
-  channelBillPlans?: ChannelBillPlanDto[];
-  sections?: SectionDto[];
-  channelGroups?: ChannelGroupDto[];
-  channelUsers?: ChannelUserDto[];
+  channelBillPlan?: ChannelBillPlanDto[];
+  section?: SectionDto[];
+  channelGroup?: ChannelGroupDto[];
+  channelUser?: ChannelUserDto[];
 }
 
-interface ChannelDetails {
+export class ChannelDetails {
   description?: string;
   chargingType?: string;
+  profileImage?: string;
+  coverImage?: string;
 }
 
 // const entityJson = {

@@ -6,7 +6,7 @@ export class PlanDto extends DtoBase{
   planDetails?: string;
   planDefaultPrice?: string;
   planCurrency?: string;
-  channelBillPlans?: ChannelBillPlanDto[];
+  channelBillPlan?: ChannelBillPlanDto[];
 }
 
 // const entityJson = {

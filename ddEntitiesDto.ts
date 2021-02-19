@@ -7,7 +7,7 @@ export class DdEntityDto extends DtoBase{
   title?: string;
   entityDetails?: string;
   businessEvents?: BusinessEventDto[];
-  businessEventSubscribers?: BusinessEventSubscriberDto[];
+  businessEventSubscriber?: BusinessEventSubscriberDto[];
 }
 
 // const entityJson = {

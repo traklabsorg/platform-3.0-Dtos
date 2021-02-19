@@ -14,7 +14,7 @@ export class ChannelBillPlanDto extends DtoBase{
   planId?: number;
   channel?: ChannelDto;
   plan?: PlanDto;
-  subscriptions?: SubscriptionDto[];
+  subscription?: SubscriptionDto[];
 }
 
 

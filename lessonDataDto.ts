@@ -6,14 +6,14 @@ import { LessonDataReviewDto } from "./lessonDataReviewDto";
 export class LessonDataDto extends DtoBase {
   contentType?: string;
   url?: string;
-  isReviewed?: string;
-  isSubmitted?: string;
-  isDraft?: string;
-  lessonDetails?: string;
+  isReviewed?: boolean;
+  isSubmitted?: boolean;
+  isDraft?: boolean;
+  lessonDetails?: LessonDetails;
   lessonId?: number;
   lesson?: LessonDto;
-  lessonDataUsers?: LessonDataUserDto[];
-  lessonDataReviews?: LessonDataReviewDto[];
+  lessonDataUser?: LessonDataUserDto[];
+  lessonDataReview?: LessonDataReviewDto[];
 }
 
 
@@ -25,4 +25,8 @@ export enum ContentTypeDataField {
     Link="links",
     Poll="poll",
     Quiz="quiz",
+}
+
+export interface LessonDetails{
+    content?: any;
 }

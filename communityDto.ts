@@ -17,9 +17,9 @@ export class CommunityDto extends DtoBase {
   externalTenantId?: number;
   externalTenantAppId?: number;
   isActive?: boolean;
-  users?: UserDto[];
-  groups?: GroupDto[];
-  channels?: ChannelDto[];
+  user?: UserDto[];
+  group?: GroupDto[];
+  channel?: ChannelDto[];
 }
 
 export interface CommunityAdditionalDataType {

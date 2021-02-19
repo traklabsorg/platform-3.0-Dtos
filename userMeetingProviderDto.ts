@@ -10,7 +10,7 @@ export class UserMeetingProviderDto extends DtoBase{
   Details?: string;
   userId?: number;
   meetingProviderId?: number;
-  userMeetingProvider_meetings?: UserMeetingProviders_MeetingDto[];
+  userMeetingProvider_meeting?: UserMeetingProviders_MeetingDto[];
   user?: UserDto;
   meetingProvider?: MeetingProviderDto;
 //  liveContents?: LiveContentDto[];

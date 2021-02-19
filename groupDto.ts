@@ -13,9 +13,9 @@ export class GroupDto extends DtoBase {
   communityId?: number;
   isActive?: string;
   community?: CommunityDto;
-  channelGroups?: ChannelGroupDto[];
+  channelGroup?: ChannelGroupDto[];
   //  channels: ChannelDto[];
-  groupUsers: GroupUserDto[];
+  groupUser: GroupUserDto[];
   //  community : CommunityDto;
 }
 

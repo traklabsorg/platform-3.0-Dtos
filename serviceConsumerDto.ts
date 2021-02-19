@@ -6,7 +6,7 @@ export class ServiceConsumerDto extends DtoBase{
     serviceConsumerName?: string;
     serviceConsumerType?: string;
     serviceConsumerDetails?: string;
-    businessEventSubscribers?: BusinessEventSubscriberDto[];
+    businessEventSubscriber?: BusinessEventSubscriberDto[];
 }
 
 // const entityJson = {
