@@ -17,6 +17,9 @@ export class LessonDto extends DtoBase {
   lessonData?: LessonDataDto[];
 }
 
+
+
+
 class ContentDetails {
   isPublished?: boolean;
   profileImage?: string;
