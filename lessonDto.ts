@@ -14,6 +14,7 @@ export class LessonDto extends DtoBase {
   sectionId?: number;
   section?: SectionDto;
   collaborators?:number[];
+  // collaborators:string[];
   lessonData?: LessonDataDto[];
 }
 
