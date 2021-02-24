@@ -10,18 +10,21 @@ export class LessonDto extends DtoBase {
   sequence?: string;
   publishDate?: string;
   isMandatorySequence?: string;
-  isFeatured?:boolean;
+  isFeatured?: boolean;
   sectionId?: number;
   section?: SectionDto;
-  collaborators?:number[];
+  collaborators?: number[];
   lessonData?: LessonDataDto[];
 }
 
-
-
-
 class ContentDetails {
   isPublished?: boolean;
-  profileImage?: string;
+  coverImage?: CoverImage;
   isFeatured?: boolean;
+}
+
+export interface CoverImage {
+  ImageSrc: string;
+  text: string;
+  [key: string]: string;
 }
