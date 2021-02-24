@@ -15,6 +15,7 @@ export class ChannelDto extends DtoBase {
   //groupId?: GroupDto;
   communityId?: number;
   isDraft?: string;
+  channelSequenceId?: number;
   community?: CommunityDto;
   channelBillPlan?: ChannelBillPlanDto[];
   section?: SectionDto[];
