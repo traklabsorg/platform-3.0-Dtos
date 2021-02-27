@@ -22,6 +22,8 @@ class SectionDetails {
   description?: string;
   isPublished?: boolean;
   isFeatured?: boolean;
+  coverimage?: string;
+  readingorder?: boolean;
 }
 
 // const entityJson = {
