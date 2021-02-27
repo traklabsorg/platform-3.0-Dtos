@@ -3,13 +3,55 @@ import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
 
 export class GroupUserDto extends DtoBase {
-  groupUserDetails?: string;
+  groupUserDetails?: GroupUserDetails;
   groupId?: number;
   userId?: number;
   groupImage?: string;
   roleIds?: Array<number>;
   group?: GroupDto;
   user?: UserDto;
+  invitationStatus ?: InvitationStatus
+}
+
+export class GroupUserDetails{
+  groupUserEncryptedData?: GroupUserEncryptedData
+}
+
+export class InviteMemberByMailDto extends DtoBase{
+  email:string;
+  communityId:number;
+  groupId:number;
+  userId:number;
+}
+
+
+
+
+export enum InvitationStatus{
+  accepted = "ACCEPTED",
+  rejected = "REJECTED",
+  pending = "PENDING",
+  revoked = "REVOKED"
+}
+
+
+export class GroupUserEncryptedData{
+  keyLength?: number;
+  key?: any;
+  algorithm?: string;
+  iv?: any;
+  password?: string;
+  date?: Date;
+
+  constructor(keyLength?:number,key?:any,algorithm?:string,iv?:any,password?:string,date?:Date)
+  {
+    this.keyLength = keyLength;
+    this.key = key;
+    this.algorithm = algorithm;
+    this.iv = iv;
+    this.password = password;
+    this.date = date;
+  }
 }
 
 // const entityJson = {
