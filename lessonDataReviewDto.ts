@@ -3,10 +3,14 @@ import { LessonDataDto } from "./lessonDataDto";
 import { UserDto } from "./userDto";
 
 export class LessonDataReviewDto extends DtoBase{
-    reviewDetails?: string;
+    reviewDetails?: reviewData;
     reviewStatus?: boolean;
     userId?: number;
     lessonDataId?: number;
     user?: UserDto;
     lessonData?: LessonDataDto;
+}
+
+export interface reviewData {
+    comment?: string;
 }
