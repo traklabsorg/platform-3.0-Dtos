@@ -7,6 +7,7 @@ export class NotificationDto extends DtoBase{
   userId?: string;
   isRead?: boolean; 
   dateTime?: Date;
+  label?: Label;
 }
 
 enum NotificationType{
@@ -14,6 +15,12 @@ enum NotificationType{
   sms = "sms",
   web = "web",
   mobile = "mobile"
+}
+
+enum Label{
+  accountCreation = "AccountCreation",
+  webinarInvent = "WebinarInvent",
+  countReview = "CountReview"
 }
 
 
