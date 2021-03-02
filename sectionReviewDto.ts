@@ -5,8 +5,12 @@ import { UserDto } from "./userDto";
 export class SectionReviewDto extends DtoBase {
     sectionId?: number;
     userId?: number;
-    reviewDetails?: string;
+    reviewDetails?: reviewData;
     reviewStatus?: string;
     section?: SectionDto;
     user?: UserDto;
+  }
+
+  export class reviewData{
+    comment?: string;
   }
