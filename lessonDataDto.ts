@@ -11,6 +11,7 @@ export class LessonDataDto extends DtoBase {
   isDraft?: boolean;
   lessonDetails?: LessonDetails;
   lessonId?: number;
+  totalPoints?: number;
   lesson?: LessonDto;
   lessonDataUser?: LessonDataUserDto[];
   lessonDataReview?: LessonDataReviewDto[];
@@ -27,6 +28,7 @@ export enum ContentTypeDataField {
     Quiz="quiz",
 }
 
-export interface LessonDetails{
+export class LessonDetails{
     content?: any;
+    
 }
