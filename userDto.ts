@@ -11,7 +11,8 @@ import { LiveContentDto } from "./liveContentDto";
 import { ChannelUserDto } from "./channelUserDto";
 import { SectionReviewDto } from "./sectionReviewDto";
 import { PaymentDto } from "./paymentDto";
-import { RequestModel } from "submodules/platform-3.0-Entities/submodules/platform-3.0-Framework/submodules/platform-3.0-Common/common/RequestModel";
+import { RequestModel } from "./submodules/platform-3.0-Common/common/RequestModel";
+
 
 export class UserDto extends DtoBase {
   userName?: string;
