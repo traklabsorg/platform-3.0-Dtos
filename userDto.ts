@@ -11,7 +11,6 @@ import { LiveContentDto } from "./liveContentDto";
 import { ChannelUserDto } from "./channelUserDto";
 import { SectionReviewDto } from "./sectionReviewDto";
 import { PaymentDto } from "./paymentDto";
-import { RequestModel } from "./submodules/platform-3.0-Common/common/RequestModel";
 
 
 export class UserDto extends DtoBase {
@@ -50,7 +49,6 @@ export class UserDetails {
 }
 
 export class EncryptedData{
-  data?: RequestModel<GroupUserDto>;
   keyLength?: number;
   key?: any;
   algorithm?: string;
@@ -58,9 +56,8 @@ export class EncryptedData{
   password?: string;
   date?: Date;
 
-  constructor(data?:RequestModel<GroupUserDto>,keyLength?:number,key?:any,algorithm?:string,iv?:any,password?:string,date?:Date)
+  constructor(keyLength?:number,key?:any,algorithm?:string,iv?:any,password?:string,date?:Date)
   {
-    this.data = data;
     this.keyLength = keyLength;
     this.key = key;
     this.algorithm = algorithm;
