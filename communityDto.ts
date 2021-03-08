@@ -35,6 +35,8 @@ export interface CommunityAdditionalDataType {
   themeName?: string;
   statusName?: string;
   memberCount?: number;
+  communityLogo?: string;
+  loginPageImage?: string;
 }
 
 
