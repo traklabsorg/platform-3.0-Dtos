@@ -14,6 +14,11 @@ import { PaymentDto } from "./paymentDto";
 
 
 export class UserDto extends DtoBase {
+  constructor() {
+    super();
+    this.toResetPassword = false;
+  }
+  toResetPassword?: boolean;
   userName?: string;
   userType?: string;
   userDetails?: UserDetails;
