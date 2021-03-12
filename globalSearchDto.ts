@@ -2,8 +2,8 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 export class GlobalSearchDto extends DtoBase {
   fieldId: number;
-  fieldValue: number;
-  fieldType: number;
+  fieldValue: string;
+  fieldType: string;
   totalRecords: number;
   additionalDetails: AdditionalDetails;
 }
