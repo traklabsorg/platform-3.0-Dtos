@@ -12,3 +12,15 @@ export class ChannelGroupDto extends DtoBase{
   channelGroupRevokeUsers?: string;
 
 }
+
+export class ChannelUsersByGroupDto extends DtoBase {
+  userId? : number; 
+  username? : string; 
+	groupname? : string; 
+	channelId? : number; 
+	channelName? : string; 
+	roleNames? : string; 
+	typeOfAssociation? : string; 
+	labelName? : string; 
+	totalRecords? : number;
+}
