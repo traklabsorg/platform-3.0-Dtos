@@ -3,25 +3,38 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 export class NotificationDto extends DtoBase{
   notificationType?: NotificationType;
-  notificationData?: string;
-  userId?: string;
+  notificationData?: any;
+  userId?: number;
   isRead?: boolean; 
   dateTime?: Date;
   label?: Label;
+ // notificationPurpose?: NotificationPurpose;
+  notificationStatus?: NotificationStatus;
 }
 
 enum NotificationType{
   email = "email",
   sms = "sms",
-  web = "web",
+  web = "web", 
   mobile = "mobile"
 }
 
 enum Label{
-  accountCreation = "AccountCreation",
-  webinarInvent = "WebinarInvent",
-  countReview = "CountReview"
+  accountCreation = "accountcreation",
+  webinarInvent = "webinarinvent",
+  countReview = "countreview",
+  inviteMember = "invitemember"
 }
+export enum NotificationStatus{
+  success = "success",
+  failure = "failure"
+}
+
+// enum NotificationPurpose{
+//   inviteMember = "inviteMember",
+//   groupAdded = "groupAdded",
+//   channelAdded = "channelAdded"
+// }
 
 
 // const entityJson = {

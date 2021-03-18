@@ -4,7 +4,7 @@ import { ChannelBillPlanDto } from "./channelBillPlanDto";
 export class PlanDto extends DtoBase{
   planName?: string;
   planDetails?: string;
-  planDefaultPrice?: string;
+  planDefaultPrice?: number;
   planCurrency?: string;
   channelBillPlan?: ChannelBillPlanDto[];
 }
