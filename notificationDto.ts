@@ -23,7 +23,13 @@ enum Label{
   accountCreation = "accountcreation",
   webinarInvent = "webinarinvent",
   countReview = "countreview",
-  inviteMember = "invitemember"
+  inviteMember = "invitemember",
+  memberCreated = "membercreated",
+  webinarInvite = "webinarinvite",
+  webinarRegistration = "webinarregistration",
+  groupAdded = "groupadded",
+  channelAdded = "channeladded"
+
 }
 export enum NotificationStatus{
   success = "success",
