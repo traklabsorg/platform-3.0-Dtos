@@ -12,14 +12,14 @@ export class NotificationDto extends DtoBase{
   notificationStatus?: NotificationStatus;
 }
 
-enum NotificationType{
+export enum NotificationType{
   email = "email",
   sms = "sms",
   web = "web", 
   mobile = "mobile"
 }
 
-enum Label{
+export enum Label{
   accountCreation = "accountcreation",
   webinarInvent = "webinarinvent",
   countReview = "countreview",
