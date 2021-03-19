@@ -6,7 +6,7 @@ import { SubscriptionDto } from "./subscriptionDto";
 
 
 export class ChannelBillPlanDto extends DtoBase{
-  additionalDetails?: string;
+  additionalDetails?: AdditionalDetails;
   channelBillPlanDetails?: string;
   planStartDate?: Date;
   planEndDate?: Date;
@@ -15,6 +15,10 @@ export class ChannelBillPlanDto extends DtoBase{
   channel?: ChannelDto;
   plan?: PlanDto;
   subscription?: SubscriptionDto[];
+}
+
+export class AdditionalDetails{
+  price?: number;
 }
 
 
