@@ -159,27 +159,27 @@ export interface CardExpiry extends INotificationData{
 }
 
 export interface NotificationData extends INotificationData{
-  communityAdmin: string;
-  link: string;
-  name: string;
-  communityUrl: string;
-  invitedUserName: string;
-  liveContentId: string;
-  webinarPageLink: string;
-  zoomLink: string;
-  groupName: string;
-  createdBy: string;
-  channelName: string;
-  learnerName: string;
-  lessonTitle: string;
-  lessonLink: string;
-  streamName: string;
-  courseTitle: string;
-  courseLink: string;
-  authorName: string;
-  lessonOrCourseName: string;
-  month: string;
-  billingPageUrl: string;
+  communityAdmin?: string;
+  link?: string;
+  name?: string;
+  communityUrl?: string;
+  invitedUserName?: string;
+  liveContentId?: string;
+  webinarPageLink?: string;
+  zoomLink?: string;
+  groupName?: string;
+  createdBy?: string;
+  channelName?: string;
+  learnerName?: string;
+  lessonTitle?: string;
+  lessonLink?: string;
+  streamName?: string;
+  courseTitle?: string;
+  courseLink?: string;
+  authorName?: string;
+  lessonOrCourseName?: string;
+  month?: string;
+  billingPageUrl?: string;
   
   
 }
