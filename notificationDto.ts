@@ -1,7 +1,7 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 
-export interface NotificationDto extends DtoBase{
+export class NotificationDto extends DtoBase{
   notificationType?: NotificationType;
   notificationData?: NotificationData;
   userId?: number;
