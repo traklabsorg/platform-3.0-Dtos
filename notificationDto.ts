@@ -41,11 +41,13 @@ export enum NotificationStatus{
 export interface INotificationData{}
 
 export interface InviteMember extends INotificationData{
+   communityId? : number; 
    communityAdmin? : string;
    link? : string;
 }
 
 export interface MemberCreated extends INotificationData{
+  communityId? : number;
   name? : string;
   communityUrl? : string;
 }
@@ -62,83 +64,98 @@ export interface WebinarRegistration extends INotificationData{
 }
 
 export interface GroupAdded extends INotificationData{
+  groupId? : number;
   groupName? : string;
   createdBy? : string;
 }
 
 export interface ChannelAdded extends INotificationData{
+  channelId? : number;
   channelName? : string;
   createdBy? : string;
 }
 
 export interface LessonSubmitted extends INotificationData{
+  lessonId? : number; 
   learnerName? : string;
   lessonTitle? : string;
   lessonLink? : string;
 }
 
 export interface LessonPublished extends INotificationData{
+  lessonId? : number;
   lessonTitle? : string;
   channelName? : string;
   lessonLink? : string;
 }
 
 export interface NewLesson extends INotificationData{
+  lessonId? : number;
   lessonTitle? : string;
   streamName? : string;
   channelName? : string;
 }
 
 export interface LessonRejected extends INotificationData{
+  lessonId? : number;
   lessonTitle? : string;
   lessonLink? : string;
 }
 
 export interface CourseSubmitted extends INotificationData{
+  courseId? : number;
   learnerName? : string;
   courseTitle? : string;
   courseLink? : string;
 }
 
 export interface CoursePublished extends INotificationData{
+  courseId? : number;
   courseTitle? : string;
   channelName? : string;
   courseLink? : string;
 }
 
 export interface NewCourse extends INotificationData{
+  courseId? : number;
   courseTitle? : string;
   channelName? : string;
   courseLink? : string;
 }
 
 export interface CourseRejected extends INotificationData{
+  courseId? : number;
   courseTitle? : string;
   courseLink? : string;
 }
 
 export interface CreateCommunityAdmin extends INotificationData{
+  communityId? : number;
   communityUrl? : string;
   
 }
 
 export interface MadeGroupAdmin extends INotificationData{
+  groupId? : number;
   groupName? : string;
   
 }
 
 export interface InviteCollaborator extends INotificationData{
+  lessonOrCourseId? : number;
   authorName? : string;
   lessonOrCourseName? : string;
 }
 
 export interface LessonFeatured extends INotificationData{
+  lessonId? : number;
   lessonTitle? : string;
   channelName? : string;
   lessonLink? : string;
 }
 
 export interface CourseFeatured extends INotificationData{
+  courseId? : number;
   courseTitle? : string;
   channelName? : string;
   courseLink? : string;
@@ -180,6 +197,12 @@ export interface NotificationData extends INotificationData{
   lessonOrCourseName?: string;
   month?: string;
   billingPageUrl?: string;
+  communityId? : number; 
+  courseId? : number;
+  groupId? : number;
+  channelId? : number; 
+  lessonId? : number;
+  lessonOrCourseId? : number; 
   
   
 }
