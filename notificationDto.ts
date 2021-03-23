@@ -28,8 +28,13 @@ export enum Label{
   webinarInvite = "webinarinvite",
   webinarRegistration = "webinarregistration",
   groupAdded = "groupadded",
-  channelAdded = "channeladded"
-
+  channelAdded = "channeladded",
+  inviteCollaborator = "invitecollaborator",
+  lessonRejected = "lessonrejected",
+  courseRejected = "courserejected",
+  newCourse = "newcourse",
+  newLesson = "newlesson"
+  
 }
 export enum NotificationStatus{
   success = "success",
