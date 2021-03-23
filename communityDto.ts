@@ -7,7 +7,7 @@ export class CommunityDto extends DtoBase {
   communityName?: string;
   communityAdminId?: number;
   address?: string;
-  paymentInfo?: string;
+  paymentInfo?: PaymentInfo;
   subscriptionStartDate?: Date;
   subscriptionEndDate?: Date;
   userQuotas?: string;
@@ -37,6 +37,10 @@ export interface CommunityAdditionalDataType {
   memberCount?: number;
   communityLogo?: string;
   loginPageImage?: string;
+}
+
+export class PaymentInfo {
+  stripeAccount?: string;
 }
 
 
