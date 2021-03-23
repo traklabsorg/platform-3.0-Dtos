@@ -34,8 +34,8 @@ export enum Label{
   lessonRejected = "lessonrejected",
   courseRejected = "courserejected",
   newCourse = "newcourse",
-  newLesson = "newlesson"
-  
+  newLesson = "newlesson",
+  createCommunity = "createcommunity"
 }
 export enum NotificationStatus{
   success = "success",
@@ -136,7 +136,7 @@ export interface CourseRejected extends INotificationData{
 }
 
 export interface CreateCommunityAdmin extends INotificationData{
-  communityId? : number;
+//  communityId? : number;
   communityUrl? : string;
   
 }
