@@ -5,6 +5,7 @@ export class NotificationDto extends DtoBase{
   notificationType?: NotificationType;
   notificationData?: NotificationData;
   userId?: number;
+  userEmail?: string;
   isRead?: boolean; 
   dateTime?: Date;
   label?: Label;
@@ -202,7 +203,7 @@ export interface NotificationData extends INotificationData{
   groupId? : number;
   channelId? : number; 
   lessonId? : number;
-  lessonOrCourseId? : number; 
+  lessoncdOrCourseId? : number; 
   
   
 }
