@@ -5,18 +5,31 @@ import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionDto } from "./subscriptionDto";
 import { PaymentDto } from "./paymentDto";
 
-export class SubscriptionOrderDto extends DtoBase{
-    orderStatus?: string;
+
+export class SubscriptionOrderDto extends DtoBase {
+    orderStatus?: OrderStatusType;
     orderDateTime?: Date;
-    orderDetails?: string;
+    orderDetails?: OrderDetails;
     subscriptionId?: number;
     subscription?: SubscriptionDto;
     payment?: PaymentDto;
-//    title: string;
-//    channelType: string;
-//    channelDetails: string;
-//    subscriptionId: SubscriptionDto;
-//    channelBillPlans: ChannelBillPlanDto[];
+    userId?: number;
+    orderValue?: number;
+    //    title: string;
+    //    channelType: string;
+    //    channelDetails: string;
+    //    subscriptionId: SubscriptionDto;
+    //    channelBillPlans: ChannelBillPlanDto[];
+}
+
+export class OrderDetails {
+    clientSecret?: string;
+    stripeAccount?: string;
+}
+
+export enum OrderStatusType {
+    PROCESSING = "processing",
+    SUCCESS = "success"
 }
 
 // const entityJson = {
@@ -26,7 +39,7 @@ export class SubscriptionOrderDto extends DtoBase{
 //     subscriptionId : "subscriptionId?",
 //     channelBillPlans : "channelBillPlans?",
 //   };
-  
+
 //   const dtoJson = {
 //     titleDto : "titleDto?",
 //     channelTypeDto : "channelTypeDto?",
@@ -34,7 +47,7 @@ export class SubscriptionOrderDto extends DtoBase{
 //     subscriptionIdDto : "subscriptionIdDto?",
 //     channelBillPlansDto : "channelBillPlansDto?",
 //   };
-  
+
 //   const entityToDtoJson = {
 //     titleDto : "title?",
 //     channelTypeDto : "channelType?",
@@ -42,7 +55,7 @@ export class SubscriptionOrderDto extends DtoBase{
 //     subscriptionIdDto : "subscriptionId?",
 //     channelBillPlansDto : "channelBillPlans?",
 //   };
-  
+
 //   const dtoToEntityJson= {
 //     title : "titleDto?",
 //     channelType : "channelTypeDto?",
@@ -51,7 +64,7 @@ export class SubscriptionOrderDto extends DtoBase{
 //     channelBillPlans : "channelBillPlansDto?",
 
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;
