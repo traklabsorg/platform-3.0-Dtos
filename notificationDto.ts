@@ -208,7 +208,7 @@ export interface NotificationData extends INotificationData{
   groupId? : number;
   channelId? : number; 
   lessonId? : number;
-  lessoncdOrCourseId? : number; 
+  lessonOrCourseId? : number; 
   
   
 }
