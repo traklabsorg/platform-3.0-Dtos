@@ -35,7 +35,8 @@ export enum Label{
   courseRejected = "courserejected",
   newCourse = "newcourse",
   newLesson = "newlesson",
-  createCommunity = "createcommunity"
+  createCommunity = "createcommunity",
+  createGroupAdmin = "creategroupadmin"
 }
 export enum NotificationStatus{
   success = "success",
