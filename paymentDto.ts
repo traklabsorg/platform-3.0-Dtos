@@ -12,12 +12,16 @@ export class PaymentDto extends DtoBase {
   paymentCurrency?: string;
   paymentAmount?: number;
   transactionDateTime?: Date;
-  paymentDetails?: string;
+  paymentDetails?: PaymentDetails;
   subscriptionOrderId?: number;
   couponIds?: number[];
   subscriptionOrder?: SubscriptionOrderDto;
   paymentCoupon?: PaymentCouponDto[];
   user?: UserDto;
+}
+
+export class PaymentDetails {
+  clientSecret?: string;
 }
 
 // const entityJson = {

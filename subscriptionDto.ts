@@ -4,7 +4,7 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
-export class SubscriptionDto extends DtoBase{
+export class SubscriptionDto extends DtoBase {
     subscriptionDetails?: string;
     isAutoRenew?: boolean;
     isActive?: boolean;
@@ -13,7 +13,7 @@ export class SubscriptionDto extends DtoBase{
     endDateTime?: Date;
     transactionDateTime?: Date;
     channelBillPlanId?: number;
-//    channelBillPlanId?: ChannelBillPlanDto;
+    //    channelBillPlanId?: ChannelBillPlanDto;
     channelBillPlan?: ChannelBillPlanDto;
     subscriptionOrder?: SubscriptionOrderDto[];
 }
@@ -29,7 +29,7 @@ export class SubscriptionDto extends DtoBase{
 //     channelBillPlanId : "channelBillPlanId?",
 //     subscriptionOrders : "subscriptionOrders?",
 //   };
-  
+
 //   const dtoJson = {
 //     subscriptionDetailsDto : "subscriptionDetailsDto?",
 //     isAutoRenewDto : "isAutoRenewDto?",
@@ -41,7 +41,7 @@ export class SubscriptionDto extends DtoBase{
 //     channelBillPlanIdDto : "channelBillPlanIdDto?",
 //     subscriptionOrdersDto : "subscriptionOrdersDto?",
 //   };
-  
+
 //   const entityToDtoJson = {
 //     subscriptionDetailsDto : "subscriptionDetails?",
 //     isAutoRenewDto : "isAutoRenew?",
@@ -53,7 +53,7 @@ export class SubscriptionDto extends DtoBase{
 //     channelBillPlanIdDto : "channelBillPlanId?",
 //     subscriptionOrdersDto : "subscriptionOrders?",
 //   };
-  
+
 //   const dtoToEntityJson= {
 //     subscriptionDetails : "subscriptionDetailsDto?",
 //     isAutoRenew : "isAutoRenewDto?",
@@ -65,7 +65,7 @@ export class SubscriptionDto extends DtoBase{
 //     channelBillPlanId : "channelBillPlanIdDto?",
 //     subscriptionOrders : "subscriptionOrdersDto?",
 //   };
-  
+
 //   module.exports.entityJson = entityJson;
 //   module.exports.dtoJson = dtoJson;
 //   module.exports.entityToDtoJson = entityToDtoJson;

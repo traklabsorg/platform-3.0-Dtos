@@ -25,9 +25,14 @@ export class ChannelDto extends DtoBase {
 
 export class ChannelDetails {
   description?: string;
-  chargingType?: string;
+  chargingType?: ChargingType;
   profileImage?: string;
   coverImage?: string;
+}
+
+export enum ChargingType {
+  FIXED = "fixed",
+  SUBSCRIPTION = "subscription"
 }
 
 // const entityJson = {
