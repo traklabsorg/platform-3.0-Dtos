@@ -63,12 +63,12 @@ export interface MemberCreated extends INotificationData{
 
 export interface WebinarInvite extends INotificationData{
   invitedUserName? : string;
-  liveContentId? : string;
+  liveContentId? : number;
   webinarPageLink? : string;
 }
 
 export interface WebinarRegistration extends INotificationData{
-  liveContentId? : string;
+  liveContentId? : number;
   zoomLink? : string;
 }
 
@@ -190,7 +190,7 @@ export interface NotificationData extends INotificationData{
   name?: string;
   communityUrl?: string;
   invitedUserName?: string;
-  liveContentId?: string;
+  liveContentId?: number;
   webinarPageLink?: string;
   zoomLink?: string;
   groupName?: string;
