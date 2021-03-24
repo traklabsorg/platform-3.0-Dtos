@@ -41,6 +41,7 @@ export interface CommunityAdditionalDataType {
 
 export class PaymentInfo {
   stripeAccount?: string;
+  platformPercentageFee?: number;
 }
 
 
