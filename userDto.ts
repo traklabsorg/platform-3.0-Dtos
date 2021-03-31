@@ -72,6 +72,22 @@ export class EncryptedData{
   }
 }
 
+export class UserDetailsReportDto extends DtoBase{
+  userId? : number;
+  groupName : string; 
+  userName : string; 
+  firstName : string;
+  lastName : string;
+  accountStatus : string;
+  channelName : string;
+  accessRightsLevel : string;
+  actionCreationTimestamp : string;
+	numberOfJoinedChannels : number;
+	joinedChannelIds : string;
+	joinedChannelNames : string;
+	lastLogin : string;
+} 
+
 // const entityJson = {
 //   user_id : "user_id?",
 //   groupName : "groupName?",
