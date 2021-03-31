@@ -113,6 +113,19 @@ export enum RecordingType {
   local = "local",
 }
 
+
+export class WebinarDetailsReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  webinarId : number;
+	scheduledDateTime : string;
+	numberOfAttendees : number;
+	webinarType : string;
+} 
 // const entityJson = {
 //     url : "url?",
 //     contentDetails : "contentDetails?",
