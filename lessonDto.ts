@@ -60,3 +60,18 @@ export class LessonInteractionOverviewDto extends DtoBase{
 	totalLessonPointsCovered : number;
 	totalRecords : number;
 } 
+
+export class LessonPublicationReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  lessonId? : number
+  publicationId? : number;
+  lessonTitle? : string;
+  timeSubmitted: string;
+	timePublished? : string;
+} 
