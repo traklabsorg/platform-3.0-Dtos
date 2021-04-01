@@ -21,6 +21,7 @@ export class PaymentDto extends DtoBase {
 }
 
 export class PaymentDetails {
+  paymentIntent?: any;
   clientSecret?: string;
 }
 
