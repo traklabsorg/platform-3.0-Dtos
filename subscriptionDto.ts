@@ -5,7 +5,7 @@ import { ChannelBillPlanDto } from "./channelBillPlanDto";
 import { SubscriptionOrderDto } from "./subscriptionOrderDto";
 
 export class SubscriptionDto extends DtoBase {
-    subscriptionDetails?: string;
+    subscriptionDetails?: SubscriptionDetails;
     isAutoRenew?: boolean;
     isActive?: boolean;
     subscriptionType?: string;
@@ -18,6 +18,10 @@ export class SubscriptionDto extends DtoBase {
     subscriptionOrder?: SubscriptionOrderDto[];
 }
 
+export class SubscriptionDetails {
+    stripeProduct?: any;
+    stripePrice?: any;
+}
 // const entityJson = {
 //     subscriptionDetails : "subscriptionDetails?",
 //     isAutoRenew : "isAutoRenew?",
