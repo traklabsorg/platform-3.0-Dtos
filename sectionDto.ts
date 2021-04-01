@@ -26,6 +26,35 @@ class SectionDetails {
   readingorder?: boolean;
 }
 
+export class SectionInteractionReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  courseId? : number
+  publicationId? : number;
+  courseTitle? : string;
+  timeOpened? : string;
+  timeCompleted? : string;
+} 
+
+export class SectionPublicationReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  courseId? : number
+  publicationId? : number;
+  courseTitle? : string;
+  timeSubmitted: string;
+	timePublished? : string;
+} 
 // const entityJson = {
 //     title : "title?",
 //     channelId : "channelId?",
