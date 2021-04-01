@@ -42,6 +42,7 @@ export class UserDto extends DtoBase {
   channelUser?: ChannelUserDto[];
   sectionReview?: SectionReviewDto[];
   payment: PaymentDto[];
+  password: string;
 }
 
 export class UserDetails {
@@ -71,6 +72,22 @@ export class EncryptedData{
     this.date = date;
   }
 }
+
+export class UserDetailsReportDto extends DtoBase{
+  userId? : number;
+  groupName : string; 
+  userName : string; 
+  firstName : string;
+  lastName : string;
+  accountStatus : string;
+  channelName : string;
+  accessRightsLevel : string;
+  actionCreationTimestamp : string;
+	numberOfJoinedChannels : number;
+	joinedChannelIds : string;
+	joinedChannelNames : string;
+	lastLogin : string;
+} 
 
 // const entityJson = {
 //   user_id : "user_id?",

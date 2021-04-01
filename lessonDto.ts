@@ -29,3 +29,49 @@ export interface CoverImage {
   text: string;
   [key: string]: string;
 }
+
+export class LessonInteractionReportDto extends DtoBase{
+      userId?: number;
+	  	groupName? : string; 
+		 	userName? : string; 
+			firstName? : string;
+			lastName? : string;
+			accountStatus? : string;
+			channelName? : string;
+			lessonId? : number
+			publicationId? : number;
+			lessonTitle? : string;
+			timeOpened? : string;
+			timeCompleted? : string;
+} 
+
+export class LessonInteractionOverviewDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  lessonsStarted : number;
+	lessonsCompleted : number;
+	lessonId : number;
+	totalLessonPoints : number;
+	totalLessonPointsCovered : number;
+	totalRecords : number;
+} 
+
+export class LessonPublicationReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  lessonId? : number
+  publicationId? : number;
+  lessonTitle? : string;
+  timeSubmitted: string;
+	timePublished? : string;
+} 

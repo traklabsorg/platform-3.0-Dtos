@@ -22,6 +22,7 @@ export class SubscriptionDetails {
     stripeProduct?: any;
     stripePrice?: any;
 }
+
 // const entityJson = {
 //     subscriptionDetails : "subscriptionDetails?",
 //     isAutoRenew : "isAutoRenew?",

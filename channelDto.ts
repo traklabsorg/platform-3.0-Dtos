@@ -35,6 +35,21 @@ export enum ChargingType {
   SUBSCRIPTION = "subscription"
 }
 
+
+export class ChannelDetailsReportDto extends DtoBase{
+  userId?: number;
+  groupName? : string; 
+  userName? : string; 
+  firstName? : string;
+  lastName? : string;
+  accountStatus? : string;
+  channelName? : string;
+  channelCreationTimestamp: string;
+	channelStatus : string;
+	numberOfLessons : number;
+	numberOfCourses: number;
+} 
+
 // const entityJson = {
 //   channel_id : "channel_id?",
 //   title : "title?",
