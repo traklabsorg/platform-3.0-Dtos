@@ -42,6 +42,7 @@ export class UserDto extends DtoBase {
   channelUser?: ChannelUserDto[];
   sectionReview?: SectionReviewDto[];
   payment: PaymentDto[];
+  password: string;
 }
 
 export class UserDetails {
