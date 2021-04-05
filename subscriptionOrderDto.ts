@@ -9,6 +9,7 @@ import { PaymentDto } from "./paymentDto";
 export class SubscriptionOrderDto extends DtoBase {
     orderStatus?: OrderStatusType;
     orderDateTime?: Date;
+    orderEndDate?: Date;
     orderDetails?: OrderDetails;
     subscriptionId?: number;
     subscription?: SubscriptionDto;
@@ -28,11 +29,12 @@ export class OrderDetails {
     paymentMethod?: any;
     billingDetails?: any;
     stripeSubscription?: any;
+    paymentIntent?: any;
 }
 
 export enum OrderStatusType {
     PROCESSING = "processing",
-    SUCCESS = "success"
+    SUCCESS = "succeeded"
 }
 
 // const entityJson = {
