@@ -75,3 +75,10 @@ export class LessonPublicationReportDto extends DtoBase{
   timeSubmitted: string;
 	timePublished? : string;
 } 
+
+export class TopLessonDto extends DtoBase{
+  title? : string;
+  noOfViews? : number; 
+  completionRate? : number; 
+  totalRecords? : number;
+}

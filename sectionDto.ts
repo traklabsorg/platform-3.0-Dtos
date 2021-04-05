@@ -55,6 +55,14 @@ export class SectionPublicationReportDto extends DtoBase{
   timeSubmitted: string;
 	timePublished? : string;
 } 
+
+
+export class TopCoursesDto extends DtoBase{
+  title? : string;
+  noOfViews? : number; 
+  completionRate? : number; 
+  totalRecords? : number;
+} 
 // const entityJson = {
 //     title : "title?",
 //     channelId : "channelId?",
