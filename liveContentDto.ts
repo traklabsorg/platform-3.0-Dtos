@@ -126,6 +126,14 @@ export class WebinarDetailsReportDto extends DtoBase{
 	numberOfAttendees : number;
 	webinarType : string;
 } 
+
+
+export class TopWebinarsDto extends DtoBase{
+  title? : string;
+  noOfAttendees? : number;
+  totalRecords? : number; 
+}
+ 
 // const entityJson = {
 //     url : "url?",
 //     contentDetails : "contentDetails?",
