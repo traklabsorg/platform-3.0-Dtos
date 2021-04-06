@@ -42,6 +42,12 @@ export class UserDto extends DtoBase {
   channelUser?: ChannelUserDto[];
   sectionReview?: SectionReviewDto[];
   payment: PaymentDto[];
+  password: string;
+  paymentInfo: PaymentInfo;
+}
+
+export class PaymentInfo {
+  stripeCustomerAccount: any;
 }
 
 export class UserDetails {
@@ -50,10 +56,10 @@ export class UserDetails {
   password?: string;
   coverImage?: string;
   profileImage?: string;
-  encryptedData?:EncryptedData;
+  encryptedData?: EncryptedData;
 }
 
-export class EncryptedData{
+export class EncryptedData {
   keyLength?: number;
   key?: any;
   algorithm?: string;
@@ -61,8 +67,7 @@ export class EncryptedData{
   password?: string;
   date?: Date;
 
-  constructor(keyLength?:number,key?:any,algorithm?:string,iv?:any,password?:string,date?:Date)
-  {
+  constructor(keyLength?: number, key?: any, algorithm?: string, iv?: any, password?: string, date?: Date) {
     this.keyLength = keyLength;
     this.key = key;
     this.algorithm = algorithm;
@@ -70,6 +75,26 @@ export class EncryptedData{
     this.password = password;
     this.date = date;
   }
+}
+
+export class UserDetailsReportDto extends DtoBase {
+  userId?: number;
+  groupName: string;
+  userName: string;
+  firstName: string;
+  lastName: string;
+  accountStatus: string;
+  channelName: string;
+  accessRightsLevel: string;
+  actionCreationTimestamp: string;
+  numberOfJoinedChannels: number;
+  joinedChannelIds: string;
+  joinedChannelNames: string;
+  lastLogin: string;
+}
+
+export class UpdateUserDto extends DtoBase {
+  paymentInfo: PaymentInfo;
 }
 
 // const entityJson = {
