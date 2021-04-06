@@ -25,6 +25,9 @@ export class SubscriptionOrderDto extends DtoBase {
 export class OrderDetails {
     clientSecret?: string;
     stripeAccount?: string;
+    paymentMethod?: any;
+    billingDetails?: any;
+    stripeSubscription?: any;
 }
 
 export enum OrderStatusType {
