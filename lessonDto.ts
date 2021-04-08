@@ -21,7 +21,6 @@ export class LessonDto extends DtoBase {
 class ContentDetails {
   isPublished?: boolean;
   coverImage?: CoverImage;
-  isFeatured?: boolean;
 }
 
 export interface CoverImage {
