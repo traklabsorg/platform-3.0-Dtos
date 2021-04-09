@@ -14,3 +14,15 @@ export class CommunityCardDto extends DtoBase {
     community: CommunityDto[];
     group: GroupDto;
 }
+
+
+export class UpdateCommunityCardDto extends DtoBase {
+    nameOnCard?: string;
+    cardType?: string;
+    cardNumber?: string;
+    expiryDate?: string;
+    cvv?: string;
+    cardImage?: string;
+    isActive?: boolean;
+    additionalData?: string;
+}
