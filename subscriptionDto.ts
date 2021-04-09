@@ -13,7 +13,6 @@ export class SubscriptionDto extends DtoBase {
     endDateTime?: Date;
     transactionDateTime?: Date;
     channelBillPlanId?: number;
-    //    channelBillPlanId?: ChannelBillPlanDto;
     channelBillPlan?: ChannelBillPlanDto;
     subscriptionOrder?: SubscriptionOrderDto[];
 }
