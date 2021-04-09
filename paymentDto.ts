@@ -23,6 +23,12 @@ export class PaymentDto extends DtoBase {
 export class PaymentDetails {
   paymentIntent?: any;
   clientSecret?: string;
+  earnings?: Earnings;
+}
+
+export class Earnings{
+  balance?: any;
+  balanceTransactions?: any;
 }
 
 // const entityJson = {
