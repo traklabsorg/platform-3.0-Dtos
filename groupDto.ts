@@ -22,7 +22,7 @@ export class GroupDto extends DtoBase {
 interface CreditCard {
   cardType?: string;
   nameOnCard?: string;
-  cardnumber?: string;
+  cardNumber?: string;
   expiryDate?: string;
   cvv?: string;
 }
