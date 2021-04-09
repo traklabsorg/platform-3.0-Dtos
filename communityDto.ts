@@ -42,8 +42,19 @@ export interface CommunityAdditionalDataType {
 export class PaymentInfo {
   stripeAccount?: string;
   platformPercentageFee?: number;
+  billingDetails?: BillingDetails;
 }
 
+export class BillingDetails {
+  email?: string;
+  attention?: string;
+  name?: string;
+  address?: string;
+}
+
+export class UpdateCommunityDto extends DtoBase {
+  paymentInfo?: PaymentInfo;
+}
 
 
 // const entityJson = {
