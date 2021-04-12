@@ -12,7 +12,7 @@ export class GroupDto extends DtoBase {
   isActive?: string;
   community?: CommunityDto;
   channelGroup?: ChannelGroupDto[];
-  communityCardId?: number;
+
   groupUser: GroupUserDto[];
 }
 

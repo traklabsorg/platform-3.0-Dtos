@@ -12,7 +12,7 @@ export class CommunityCardDto extends DtoBase {
     isActive?: boolean;
     additionalData?: string;
     community: CommunityDto[];
-    group: GroupDto;
+   isDefault:boolean
 }
 
 
