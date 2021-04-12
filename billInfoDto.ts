@@ -12,3 +12,4 @@ export class BillInfoDto extends DtoBase {
     totalCharges? : number;
     totalrecords? : number;
 }
+
