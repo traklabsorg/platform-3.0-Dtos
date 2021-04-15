@@ -81,3 +81,14 @@ export class TopLessonDto extends DtoBase{
   completionRate? : number; 
   totalRecords? : number;
 }
+
+export class TopLessonDaywiseDto extends DtoBase{
+  contextDate? : string;
+	title? : string; 
+	noOfViews? : number; 
+	completionRate?: number;
+	completedNumbers?: number;
+  openedNumbers: number;
+	totalLessonPublished? : number;
+	totalrecords? : number; 
+}
