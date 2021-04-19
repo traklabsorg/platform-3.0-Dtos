@@ -18,5 +18,6 @@ export class AdditionalDetails {
   isViewed?: boolean;
   duration?: number;
   playedSeconds?: number;
+  dateAccessed?: Date[];
   [key: string]: any;
 }
