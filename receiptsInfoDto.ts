@@ -19,8 +19,7 @@ export class ReceiptsInfoDto extends DtoBase {
 	channelFee? : number;
 	amountCollected? : number;
 	netPayout? : number;
-	platformFee? : number;
-	stripeFees? : number;
+	feeDetails? : string;
 	currency? : string;
 	invoiceUrl? : string;
 }
