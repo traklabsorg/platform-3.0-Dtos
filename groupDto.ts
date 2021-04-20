@@ -7,13 +7,18 @@ export class GroupDto extends DtoBase {
   groupName?: string;
   groupType?: string;
   groupDetails?: GroupDetails;
-  groupPayerType?: string;
+  groupPayerType?: GroupPayerType;
   communityId?: number;
   isActive?: string;
   community?: CommunityDto;
   channelGroup?: ChannelGroupDto[];
 
   groupUser: GroupUserDto[];
+}
+
+export enum GroupPayerType {
+  SELF = "self",
+  COMMUNITY = "community"
 }
 
 interface CreditCard {
