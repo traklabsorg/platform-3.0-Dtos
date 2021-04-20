@@ -1,8 +1,8 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 export class ReceiptsInfoDto extends DtoBase {
-	groupName?: number;
-	userName?: number;
+	groupName?: string;
+	userName?: string;
 	billAmt?: number;
 	cuttOff?: number;
 	channelName?: string;
@@ -12,7 +12,7 @@ export class ReceiptsInfoDto extends DtoBase {
 	lastname?: string;
 	timestamp?: string;
 	transactionId?: number;
-	stripeTransactionId?: number;
+	stripeTransactionId?: string;
 	email?: string;
 	chargingType?: string;
 	channelFee?: number;
@@ -26,7 +26,7 @@ export class ReceiptsInfoDto extends DtoBase {
 
 export class PaymentReceiptDto {
 	"Timestamp"?: string;
-	"Transaction ID"?: string;
+	"Transaction ID"?: number;
 	"Stripe Transaction ID"?: string;
 	"Email"?: string;
 	"Username"?: string;
@@ -39,6 +39,7 @@ export class PaymentReceiptDto {
 	"Amount Collected"?: number;
 	"Net Payout"?: number;
 	"Platform Fee"?: number;
-	"Stripe Fees Currency"?: string;
+	"Stripe Fees"?: number;
+	"Currency"?: string;
 	"Invoice URL"?: string;
 }
