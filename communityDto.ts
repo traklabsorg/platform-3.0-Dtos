@@ -44,6 +44,7 @@ export class PaymentInfo {
   platformPercentageFee?: number;
   userFee?: number;
   billingDetails?: BillingDetails;
+  stripeCustomerAccount?: any;
 }
 
 export class BillingDetails {
@@ -57,6 +58,9 @@ export class UpdateCommunityDto extends DtoBase {
   paymentInfo?: PaymentInfo;
 }
 
+export class CommunityUpdateDto extends DtoBase {
+  paymentInfo?: PaymentInfo;
+}
 
 // const entityJson = {
 //     communityName : "communityName?",

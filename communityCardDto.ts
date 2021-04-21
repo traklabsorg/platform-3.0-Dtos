@@ -10,11 +10,16 @@ export class CommunityCardDto extends DtoBase {
     cvv?: string;
     cardImage?: string;
     isActive?: boolean;
-    additionalData?: string;
+    additionalData?: AdditionalData;
     community: CommunityDto[];
-   isDefault:boolean
+    isDefault: boolean
 }
 
+export class AdditionalData {
+    paymentMethod?: any;
+    billingDetails?: any;
+
+}
 
 export class UpdateCommunityCardDto extends DtoBase {
     nameOnCard?: string;
