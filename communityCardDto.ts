@@ -30,4 +30,5 @@ export class UpdateCommunityCardDto extends DtoBase {
     cardImage?: string;
     isActive?: boolean;
     additionalData?: string;
+    isDefault?: boolean;
 }

@@ -19,7 +19,7 @@ export class ChannelUsersByGroupDto extends DtoBase {
 	groupname? : string; 
 	channelId? : number; 
 	channelName? : string; 
-	roleNames? : string; 
+	roleIds? : number[]; 
 	typeOfAssociation? : string; 
 	labelName? : string; 
 	totalRecords? : number;

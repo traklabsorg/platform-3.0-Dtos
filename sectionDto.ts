@@ -63,6 +63,17 @@ export class TopCoursesDto extends DtoBase{
   completionRate? : number; 
   totalRecords? : number;
 } 
+
+export class TopCoursesDaywiseDto extends DtoBase{
+  contextDate? : string;
+	title? : string; 
+	noOfViews? : number; 
+	completionRate?: number;
+	completedNumbers?: number;
+  openedNumbers: number;
+	totalCoursePublished? : number;
+	totalrecords? : number; 
+}
 // const entityJson = {
 //     title : "title?",
 //     channelId : "channelId?",

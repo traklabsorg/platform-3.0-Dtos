@@ -21,6 +21,7 @@ export class ChannelDto extends DtoBase {
   section?: SectionDto[];
   channelGroup?: ChannelGroupDto[];
   channelUser?: ChannelUserDto[];
+  isCommunityChannel?: boolean;
 }
 
 export class ChannelDetails {
