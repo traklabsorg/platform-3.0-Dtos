@@ -12,7 +12,7 @@ export class ReceiptsInfoDto extends DtoBase {
 	lastName?: string;
 	timestamp?: string;
 	transactionId?: number;
-	stripeTransactionId?: number;
+	stripeTransactionId?: string;
 	email?: string;
 	chargingType?: string;
 	channelFee?: number;
@@ -21,6 +21,7 @@ export class ReceiptsInfoDto extends DtoBase {
 	feeDetails?: string;
 	currency?: string;
 	invoiceUrl?: string;
+	channelImage?: string; 
 }
 
 export class PaymentReceiptDto {
