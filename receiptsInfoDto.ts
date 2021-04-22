@@ -12,13 +12,13 @@ export class ReceiptsInfoDto extends DtoBase {
 	lastName?: string;
 	timestamp?: string;
 	transactionId?: number;
-	stripeTransactionId?: number;
+	stripeTransactionId?: string;
 	email?: string;
 	chargingType?: string;
 	channelFee?: number;
 	amountCollected?: number;
 	netPayout?: number;
-	feeDetails?: string;
+	feeDetails?: any;
 	currency?: string;
 	invoiceUrl?: string;
 }
