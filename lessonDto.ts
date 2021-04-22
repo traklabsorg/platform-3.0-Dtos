@@ -92,3 +92,15 @@ export class TopLessonDaywiseDto extends DtoBase{
 	totalLessonPublished? : number;
 	totalrecords? : number; 
 }
+
+export class LessonDailyEngagementDto extends DtoBase{
+  hourValue?: number;
+  noOfUniqueAccesses?: number; 
+	totalrecords? : number; 
+}
+
+export class LessonWeeklyEngagementDto extends DtoBase{
+  weekValueInString?: string;
+  noOfUniqueAccesses?: number; 
+	totalrecords? : number; 
+}
