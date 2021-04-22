@@ -11,7 +11,7 @@ export class CommunityCardDto extends DtoBase {
     cardImage?: string;
     isActive?: boolean;
     additionalData?: AdditionalData;
-    community: CommunityDto[];
+    community: CommunityDto;
     isDefault: boolean
 }
 
