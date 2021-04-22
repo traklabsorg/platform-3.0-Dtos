@@ -21,6 +21,7 @@ export class ReceiptsInfoDto extends DtoBase {
 	feeDetails?: any;
 	currency?: string;
 	invoiceUrl?: string;
+	channelImage?: string; 
 }
 
 export class PaymentReceiptDto {
