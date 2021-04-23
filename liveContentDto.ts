@@ -130,6 +130,7 @@ export class WebinarDetailsReportDto extends DtoBase{
 
 export class TopWebinarsDto extends DtoBase{
   title? : string;
+  coverImage? : string;
   noOfAttendees? : number;
   totalRecords? : number; 
 }

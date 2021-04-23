@@ -59,6 +59,7 @@ export class SectionPublicationReportDto extends DtoBase{
 
 export class TopCoursesDto extends DtoBase{
   title? : string;
+  coverImage? : string;
   noOfViews? : number; 
   completionRate? : number; 
   totalRecords? : number;
