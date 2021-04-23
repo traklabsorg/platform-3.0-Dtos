@@ -13,6 +13,7 @@ export class LiveContentDto extends DtoBase {
   user?: UserDto;
   externalMeetingProviderUserId?: string;
   userId?: number;
+  communityId?: number;
   recordingURL?: string;
   hostUsers?: string;
   contentDetails?: ContentDetails;
