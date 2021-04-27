@@ -1,6 +1,7 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 
 export class ProfileDto extends DtoBase {
+  userId?: number;
   publishedCourses?: number;
   publishedLessons?: number;
   publishedWebinars?: number;
