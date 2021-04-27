@@ -8,6 +8,7 @@ export class ProfileDto extends DtoBase {
   consumedLessons?: number;
   consumedWebinars?: number;
   groupRank?: number;
+  totalMemberInGroup?: number;
   totalPoints?: number;
   channelPointsData?: ChannelData[];
 }
@@ -19,4 +20,5 @@ export class ChannelData {
   rank?: string;
   user_id?: number;
   profile_image_url?: string;
+  total_member?: number;
 }
