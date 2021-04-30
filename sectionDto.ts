@@ -16,6 +16,7 @@ export class SectionDto extends DtoBase {
   sectionReview?: SectionReviewDto[];
   content?: string[];
   liveContent?: string[];
+  isHidden?: boolean;
 }
 
 class SectionDetails {
