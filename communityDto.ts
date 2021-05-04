@@ -2,6 +2,7 @@ import { ChannelDto } from "./channelDto";
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
+import { SidebarItem, SideBarItemType } from "models/sidebarItem";
 
 export class CommunityDto extends DtoBase {
   communityName?: string;
@@ -20,6 +21,57 @@ export class CommunityDto extends DtoBase {
   user?: UserDto[];
   group?: GroupDto[];
   channel?: ChannelDto[];
+  communitySettings: CommunitySettings
+}
+
+
+export class CommunitySettings {
+  constructor() {
+    this.discoverable = true;
+    this.enableUserDetailsChange = true;
+    this.enableChannelLeaderBoard = true;
+    this.enableGroupLeaderBoard = true;
+    this.enableEmailNotification = true;
+    this.enableLinkSharing = true;
+    this.enableChat = true;
+    this.enableRewards = false;
+    this.enableSignUpViaEmail = false;
+    this.accessViaOpenId = false;
+    this.enableExternalLink = true;
+    this.enablePasswordExpiry = false;
+    this.externalLinkConfiguration = new ExternalLinkConfiguration();
+    this.updatedFields = []
+  }
+  updatedFields?: UpdateFields[];
+  discoverable?: boolean;
+  enableUserDetailsChange?: boolean;
+  enableGroupLeaderBoard?: boolean;
+  enableChannelLeaderBoard?: boolean;
+  enableEmailNotification?: boolean;
+  enableLinkSharing?: boolean;
+  enableChat?: boolean;
+  enableRewards?: boolean;
+  rewardsConfiguration?: any;
+  enableSignUpViaEmail?: boolean;
+  accessViaOpenId?: boolean;
+  openIdConfiguration?: boolean;
+  enableExternalLink?: boolean;
+  externalLinkConfiguration?: ExternalLinkConfiguration;
+  enablePasswordExpiry?: any;
+  passwordExpiryConfiguration?: any;
+  coverImage?: string;
+  logo?: string;
+  defaultLanguage?: string;
+}
+
+export enum UpdateFields {
+  ExternalLinkConfiguration,
+}
+
+export class ExternalLinkConfiguration {
+  text?: string;
+  route?: any;
+  menuIcon?: string;
 }
 
 export interface CommunityAdditionalDataType {
