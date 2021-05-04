@@ -135,6 +135,12 @@ export class TopWebinarsDto extends DtoBase{
   noOfAttendees? : number;
   totalRecords? : number; 
 }
+
+export class TopWebinarsDaywiseDto extends DtoBase{
+  contextDate? : string;
+  noOfWebinars? : number;
+  totalRecords? : number; 
+}
  
 // const entityJson = {
 //     url : "url?",
