@@ -20,7 +20,7 @@ export class CommunityDto extends DtoBase {
   user?: UserDto[];
   group?: GroupDto[];
   channel?: ChannelDto[];
-  communitySettings: CommunitySettings
+  communitySettings?: CommunitySettings
 }
 
 
