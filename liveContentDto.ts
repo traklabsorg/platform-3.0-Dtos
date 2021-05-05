@@ -13,6 +13,7 @@ export class LiveContentDto extends DtoBase {
   user?: UserDto;
   externalMeetingProviderUserId?: string;
   userId?: number;
+  communityId?: number;
   recordingURL?: string;
   hostUsers?: string;
   contentDetails?: ContentDetails;
@@ -132,6 +133,12 @@ export class TopWebinarsDto extends DtoBase{
   title? : string;
   coverImage? : string;
   noOfAttendees? : number;
+  totalRecords? : number; 
+}
+
+export class TopWebinarsDaywiseDto extends DtoBase{
+  contextDate? : string;
+  noOfWebinars? : number;
   totalRecords? : number; 
 }
  

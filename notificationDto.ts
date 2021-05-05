@@ -216,6 +216,7 @@ export interface NotificationData extends INotificationData{
   channelId? : number; 
   lessonId? : number;
   lessonOrCourseId? : number; 
+  notificationMessage? : string;
   
   
 }

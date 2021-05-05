@@ -7,6 +7,11 @@ import { LessonDataReviewDto } from "./lessonDataReviewDto";
 import { SectionReviewDto } from "./sectionReviewDto";
 
 export class SectionDto extends DtoBase {
+  constructor() {
+    super();
+    this.isHidden = false;
+  }
+
   title?: string;
   sectionDetails?: SectionDetails;
   sectionType?: string;
@@ -16,6 +21,7 @@ export class SectionDto extends DtoBase {
   sectionReview?: SectionReviewDto[];
   content?: string[];
   liveContent?: string[];
+  isHidden?: boolean;
 }
 
 class SectionDetails {
@@ -26,66 +32,65 @@ class SectionDetails {
   readingorder?: boolean;
 }
 
-export class SectionInteractionReportDto extends DtoBase{
+export class SectionInteractionReportDto extends DtoBase {
   userId?: number;
-  groupName? : string; 
-  userName? : string; 
-  firstName? : string;
-  lastName? : string;
-  accountStatus? : string;
-  channelName? : string;
-  courseId? : number
-  publicationId? : number;
-  courseTitle? : string;
-  timeOpened? : string;
-  timeCompleted? : string;
-} 
+  groupName?: string;
+  userName?: string;
+  firstName?: string;
+  lastName?: string;
+  accountStatus?: string;
+  channelName?: string;
+  courseId?: number;
+  publicationId?: number;
+  courseTitle?: string;
+  timeOpened?: string;
+  timeCompleted?: string;
+}
 
-export class SectionPublicationReportDto extends DtoBase{
+export class SectionPublicationReportDto extends DtoBase {
   userId?: number;
-  groupName? : string; 
-  userName? : string; 
-  firstName? : string;
-  lastName? : string;
-  accountStatus? : string;
-  channelName? : string;
-  courseId? : number
-  publicationId? : number;
-  courseTitle? : string;
+  groupName?: string;
+  userName?: string;
+  firstName?: string;
+  lastName?: string;
+  accountStatus?: string;
+  channelName?: string;
+  courseId?: number;
+  publicationId?: number;
+  courseTitle?: string;
   timeSubmitted: string;
-	timePublished? : string;
-} 
+  timePublished?: string;
+}
 
+export class TopCoursesDto extends DtoBase {
+  title?: string;
+  coverImage?: string;
+  noOfViews?: number;
+  completionRate?: number;
+  totalRecords?: number;
+}
 
-export class TopCoursesDto extends DtoBase{
-  title? : string;
-  coverImage? : string;
-  noOfViews? : number; 
-  completionRate? : number; 
-  totalRecords? : number;
-} 
-
-export class TopCoursesDaywiseDto extends DtoBase{
-  contextDate? : string;
-	title? : string; 
-	noOfViews? : number; 
-	completionRate?: number;
-	completedNumbers?: number;
+export class TopCoursesDaywiseDto extends DtoBase {
+  contextDate?: string;
+  title?: string;
+  noOfViews?: number;
+  completionRate?: number;
+  completedNumbers?: number;
   openedNumbers: number;
-	totalCoursePublished? : number;
-	totalrecords? : number; 
+  totalCoursePublished?: number;
+  totalrecords?: number;
 }
 
-export class SectionDailyEngagementDto extends DtoBase{
+export class SectionDailyEngagementDto extends DtoBase {
   hourValue?: number;
-  noOfUniqueAccesses?: number; 
-	totalrecords? : number; 
+  noOfUniqueAccesses?: number;
+  totalrecords?: number;
 }
 
-export class SectionWeeklyEngagementDto extends DtoBase{
+export class SectionWeeklyEngagementDto extends DtoBase {
   weekValueInString?: string;
-  noOfUniqueAccesses?: number; 
-	totalrecords? : number; 
+  noOfUniqueAccesses?: number;
+  totalrecords?: number;
 }
 // const entityJson = {
 //     title : "title?",
