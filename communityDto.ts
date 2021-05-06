@@ -3,7 +3,6 @@ import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { GroupDto } from "./groupDto";
 import { UserDto } from "./userDto";
 
-
 export class CommunityDto extends DtoBase {
   communityName?: string;
   communityAdminId?: number;
@@ -21,7 +20,7 @@ export class CommunityDto extends DtoBase {
   user?: UserDto[];
   group?: GroupDto[];
   channel?: ChannelDto[];
-  communitySettings: CommunitySettings
+  communitySettings?: CommunitySettings
 }
 
 

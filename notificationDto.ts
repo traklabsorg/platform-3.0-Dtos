@@ -221,6 +221,11 @@ export interface NotificationData extends INotificationData{
   
 }
 
+export class UpdateNotificationDto extends DtoBase{
+  isRead?: boolean; 
+}
+
+
 
 // enum NotificationPurpose{
 //   inviteMember = "inviteMember",
