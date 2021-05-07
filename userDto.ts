@@ -11,6 +11,7 @@ import { LiveContentDto } from "./liveContentDto";
 import { ChannelUserDto } from "./channelUserDto";
 import { SectionReviewDto } from "./sectionReviewDto";
 import { PaymentDto } from "./paymentDto";
+import { UserSettings } from "aws-sdk/clients/sagemaker";
 
 
 export class UserDto extends DtoBase {
@@ -26,6 +27,7 @@ export class UserDto extends DtoBase {
   userImage?: string;
   isActive?: string;
   userAdditionalDetails?: string;
+  userSettings?: UserSettingsDto;
   lastLogonDateTime?: Date;
   liveContentUser?: LiveContentUserDto[];
   userMeetingProvider?: UserMeetingProviderDto[];
@@ -43,6 +45,12 @@ export class UserDto extends DtoBase {
   sectionReview?: SectionReviewDto[];
   payment: PaymentDto[];
   paymentInfo: PaymentInfo;
+}
+
+export class UserSettingsDto {
+  passwordExpirationDate? : string;
+  passwordExpirationTime? : number;
+  passwordExpiryNotificationTime? : number;
 }
 
 export class PaymentInfo {

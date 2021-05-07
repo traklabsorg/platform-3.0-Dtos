@@ -21,28 +21,28 @@ export enum NotificationType{
 }
 
 export enum Label{
-  accountCreation = "accountcreation",
-  webinarInvent = "webinarinvent",
-  countReview = "countreview",
-  inviteMember = "invitemember",
-  memberCreated = "membercreated",
-  webinarInvite = "webinarinvite",
-  webinarRegistration = "webinarregistration",
-  groupAdded = "groupadded",
-  channelAdded = "channeladded",
-  inviteCollaborator = "invitecollaborator",
-  lessonRejected = "lessonrejected",
-  courseRejected = "courserejected",
-  newCourse = "newcourse",
-  newLesson = "newlesson",
-  createCommunity = "createcommunity",
-  createGroupAdmin = "creategroupadmin",
-  lessonPublished =  "lessonpublished",
-  lessonSubmitted =  "lessonsubmitted",
-  courseSubmitted =  "coursesubmitted",
-  coursePublished = "coursepublished",
-  lessonFeatured = "lessonfeatured",
-  coursFeatured = "coursefeatured"
+  accountCreation = "Account Creation",
+  webinarInvent = "Webinar Invent",
+  countReview = "Count Review",
+  inviteMember = "Invite Member",
+  memberCreated = "Member Created",
+  webinarInvite = "Webinar Invite",
+  webinarRegistration = "Webinar Registration",
+  groupAdded = "Group Added",
+  channelAdded = "Channel Added",
+  inviteCollaborator = "Invite Collaborator",
+  lessonRejected = "Lesson Rejected",
+  courseRejected = "Course Rejected",
+  newCourse = "New Course",
+  newLesson = "New Lesson",
+  createCommunity = "Create Community",
+  createGroupAdmin = "Create Group Admin",
+  lessonPublished =  "Lesson Published",
+  lessonSubmitted =  "Lesson Submitted",
+  courseSubmitted =  "Course Submitted",
+  coursePublished = "Course Published",
+  lessonFeatured = "Lesson Featured",
+  coursFeatured = "Course Featured"
 }
 export enum NotificationStatus{
   success = "success",
@@ -220,6 +220,11 @@ export interface NotificationData extends INotificationData{
   
   
 }
+
+export class UpdateNotificationDto extends DtoBase{
+  isRead?: boolean; 
+}
+
 
 
 // enum NotificationPurpose{
