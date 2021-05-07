@@ -20,7 +20,7 @@ export class CommunityDto extends DtoBase {
   user?: UserDto[];
   group?: GroupDto[];
   channel?: ChannelDto[];
-  communitySettings: CommunitySettings
+  communitySettings?: CommunitySettings
 }
 
 
@@ -28,7 +28,7 @@ export class CommunitySettings {
   constructor() {
     this.discoverable = true;
     this.enableUserDetailsChange = true;
-    this.enableChannelLeaderBoard = true;
+    this.enableChannelLeaderBoard = false;
     this.enableGroupLeaderBoard = true;
     this.enableEmailNotification = true;
     this.enableLinkSharing = true;
@@ -107,6 +107,7 @@ export class BillingDetails {
 
 export class UpdateCommunityDto extends DtoBase {
   paymentInfo?: PaymentInfo;
+  communitySettings?: CommunitySettings;
 }
 
 export class CommunityUpdateDto extends DtoBase {
