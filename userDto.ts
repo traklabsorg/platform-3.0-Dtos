@@ -53,10 +53,12 @@ export class UserSettingsDto {
     this.passwordExpirationPeriod = PasswordExpirationPeriod.THREE_MONTHS;
     this.passwordExpiryNotificationTime = PasswordExpiryNotificationTime.ONE_WEEK_BEFORE;
     this.passwordExpirationDate = null;
+    this.enableEmailNotification = true;
   }
   passwordExpirationDate? : string;
   passwordExpirationPeriod? : PasswordExpirationPeriod;
   passwordExpiryNotificationTime? : PasswordExpiryNotificationTime;
+  enableEmailNotification? : boolean;
 }
 
 export enum PasswordExpirationPeriod {
@@ -120,6 +122,9 @@ export class UserDetailsReportDto extends DtoBase {
 
 export class UpdateUserDto extends DtoBase {
   paymentInfo: PaymentInfo;
+  toResetPassword?: boolean;
+  userDetails?: UserDetails;
+  userName?: string;
 }
 
 // const entityJson = {
