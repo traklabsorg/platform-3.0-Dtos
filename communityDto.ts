@@ -38,6 +38,8 @@ export class CommunitySettings {
     this.accessViaOpenId = false;
     this.enableExternalLink = true;
     this.enablePasswordExpiry = false;
+    this.passwordExpirationPeriod = PasswordExpirationPeriod.THREE_MONTHS;
+    this.passwordExpiryNotificationTime = PasswordExpiryNotificationTime.ONE_WEEK_BEFORE;
     this.externalLinkConfiguration = new ExternalLinkConfiguration();
     this.updatedFields = []
   }
@@ -57,11 +59,25 @@ export class CommunitySettings {
   enableExternalLink?: boolean;
   externalLinkConfiguration?: ExternalLinkConfiguration;
   enablePasswordExpiry?: any;
-  passwordExpiryConfiguration?: any;
+  notifyAllCommunityMembers?: boolean;
+  passwordExpirationPeriod?: PasswordExpirationPeriod;
+  passwordExpiryNotificationTime?: PasswordExpiryNotificationTime;
   coverImage?: string;
   logo?: string;
   defaultLanguage?: string;
 }
+
+export enum PasswordExpirationPeriod{
+  FORTNIGHT = 14,
+  MONTH = 30,
+  TWO_MONTHS = 60,
+  THREE_MONTHS = 90
+}
+
+export enum PasswordExpiryNotificationTime {
+  ONE_DAY_BEFORE = 1,
+  ONE_WEEK_BEFORE = 7
+  }
 
 export enum UpdateFields {
   ExternalLinkConfiguration,
