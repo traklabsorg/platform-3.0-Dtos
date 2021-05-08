@@ -107,6 +107,7 @@ export class BillingDetails {
 
 export class UpdateCommunityDto extends DtoBase {
   paymentInfo?: PaymentInfo;
+  communitySettings?: CommunitySettings;
 }
 
 export class CommunityUpdateDto extends DtoBase {
