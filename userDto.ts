@@ -48,6 +48,10 @@ export class UserDto extends DtoBase {
 }
 
 export class UserSettingsDto {
+  constructor() {
+    this.enableEmailNotification = true;
+  }
+  enableEmailNotification? : boolean;
   passwordExpirationDate? : string;
   passwordExpirationTime? : number;
   passwordExpiryNotificationTime? : number;
@@ -102,6 +106,8 @@ export class UserDetailsReportDto extends DtoBase {
 
 export class UpdateUserDto extends DtoBase {
   paymentInfo: PaymentInfo;
+  toResetPassword?: boolean;
+  userDetails?: UserDetails;
 }
 
 // const entityJson = {
