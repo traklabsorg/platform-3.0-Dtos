@@ -108,6 +108,7 @@ export class UpdateUserDto extends DtoBase {
   paymentInfo: PaymentInfo;
   toResetPassword?: boolean;
   userDetails?: UserDetails;
+  userName?: string;
 }
 
 // const entityJson = {
