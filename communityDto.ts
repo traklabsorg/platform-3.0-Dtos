@@ -24,8 +24,9 @@ export class CommunityDto extends DtoBase {
 }
 
 
-export class CommunitySettings {
+export class CommunitySettings extends DtoBase {
   constructor() {
+    super();
     this.discoverable = true;
     this.enableUserDetailsChange = true;
     this.enableChannelLeaderBoard = true;
