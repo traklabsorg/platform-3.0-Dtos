@@ -37,7 +37,7 @@ export class CommunitySettings extends DtoBase {
     this.enableRewards = false;
     this.enableSignUpViaEmail = false;
     this.accessViaOpenId = false;
-    this.enableExternalLink = true;
+    this.enableExternalLink = false;
     this.enablePasswordExpiry = false;
     this.passwordExpirationPeriod = PasswordExpirationPeriod.THREE_MONTHS;
     this.passwordExpiryNotificationTime = PasswordExpiryNotificationTime.ONE_WEEK_BEFORE;
