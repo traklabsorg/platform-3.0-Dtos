@@ -36,6 +36,7 @@ export class UserDto extends DtoBase {
   lessonDataReview?: LessonDataReviewDto[];
   lessonDataUser?: LessonDataUserDto[];
   communityId?: number;
+  communityUrl?: string;
   community?: CommunityDto;
   liveContent?: LiveContentDto[];
   externalUserId?: number;
@@ -48,13 +49,28 @@ export class UserDto extends DtoBase {
 }
 
 export class UserSettingsDto {
-  constructor() {
+  constructor(){
+    this.passwordExpirationPeriod = PasswordExpirationPeriod.THREE_MONTHS;
+    this.passwordExpiryNotificationTime = PasswordExpiryNotificationTime.ONE_WEEK_BEFORE;
+    this.passwordExpirationDate = null;
     this.enableEmailNotification = true;
   }
-  enableEmailNotification? : boolean;
   passwordExpirationDate? : string;
-  passwordExpirationTime? : number;
-  passwordExpiryNotificationTime? : number;
+  passwordExpirationPeriod? : PasswordExpirationPeriod;
+  passwordExpiryNotificationTime? : PasswordExpiryNotificationTime;
+  enableEmailNotification? : boolean;
+}
+
+export enum PasswordExpirationPeriod {
+  FORTNIGHT = 14,
+  MONTH = 30,
+  TWO_MONTHS = 60,
+  THREE_MONTHS = 90
+}
+
+export enum PasswordExpiryNotificationTime {
+  ONE_DAY_BEFORE = 1,
+  ONE_WEEK_BEFORE = 7
 }
 
 export class PaymentInfo {
@@ -108,6 +124,7 @@ export class UpdateUserDto extends DtoBase {
   paymentInfo: PaymentInfo;
   toResetPassword?: boolean;
   userDetails?: UserDetails;
+  userName?: string;
 }
 
 // const entityJson = {
