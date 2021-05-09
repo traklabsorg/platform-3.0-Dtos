@@ -36,7 +36,7 @@ export class CommunitySettings {
     this.enableRewards = false;
     this.enableSignUpViaEmail = false;
     this.accessViaOpenId = false;
-    this.enableExternalLink = true;
+    this.enableExternalLink = false;
     this.enablePasswordExpiry = false;
     this.externalLinkConfiguration = new ExternalLinkConfiguration();
     this.updatedFields = []
