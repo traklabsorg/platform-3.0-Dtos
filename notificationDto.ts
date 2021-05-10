@@ -42,7 +42,8 @@ export enum Label{
   courseSubmitted =  "Course Submitted",
   coursePublished = "Course Published",
   lessonFeatured = "Lesson Featured",
-  coursFeatured = "Course Featured"
+  coursFeatured = "Course Featured",
+  userRoleChange = "User Role Change"
 }
 export enum NotificationStatus{
   success = "success",
