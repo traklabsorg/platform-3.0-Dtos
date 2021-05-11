@@ -70,6 +70,7 @@ export interface WebinarInvite extends INotificationData{
   invitedUserName? : string;
   liveContentId? : number;
   webinarPageLink? : string;
+  zoomLink? : string;
 }
 
 export interface WebinarRegistration extends INotificationData{
