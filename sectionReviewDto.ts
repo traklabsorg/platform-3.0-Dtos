@@ -6,7 +6,7 @@ export class SectionReviewDto extends DtoBase {
     sectionId?: number;
     userId?: number;
     reviewDetails?: reviewData;
-    reviewStatus?: string;
+    reviewStatus?: boolean;
     section?: SectionDto;
     user?: UserDto;
   }
