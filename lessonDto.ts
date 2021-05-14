@@ -1,6 +1,7 @@
 import { DtoBase } from "./submodules/platform-3.0-Common/common/DtoBase";
 import { LessonDataDto } from "./lessonDataDto";
 import { SectionDto } from "./sectionDto";
+import { LessonReviewDto } from "./lessonReviewDto";
 
 export class LessonDto extends DtoBase {
   contentType?: string;
@@ -15,6 +16,7 @@ export class LessonDto extends DtoBase {
   section?: SectionDto;
   collaborators?: number[];
   lessonData?: LessonDataDto[];
+  lessonReview?: LessonReviewDto;
   lessonTotalPoint?: number;
 }
 
