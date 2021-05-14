@@ -19,16 +19,20 @@ export class LessonDataDto extends DtoBase {
 
 
 export enum ContentTypeDataField {
-    Text="text",
-    Image="image",
-    Video="video",
-    Pdf="files",
-    Link="links",
-    Poll="poll",
-    Quiz="quiz",
+  Text = "text",
+  Image = "image",
+  Video = "video",
+  Pdf = "files",
+  Link = "links",
+  Poll = "poll",
+  Quiz = "quiz",
 }
 
-export class LessonDetails{
-    content?: any;
-    
+export class LessonDetails {
+  content?: any;
+
+}
+
+export class UpdateLessonDataDto extends DtoBase {
+  lessonDetails?: LessonDetails;
 }

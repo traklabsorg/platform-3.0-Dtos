@@ -29,7 +29,7 @@ export class CommunitySettings extends DtoBase {
     super();
     this.discoverable = true;
     this.enableUserDetailsChange = true;
-    this.enableChannelLeaderBoard = true;
+    this.enableChannelLeaderBoard = false;
     this.enableGroupLeaderBoard = true;
     this.enableEmailNotification = true;
     this.enableLinkSharing = true;
