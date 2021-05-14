@@ -19,12 +19,17 @@ export class SectionDto extends DtoBase {
   channel?: ChannelDto;
   lesson?: LessonDto[];
   sectionReview?: SectionReviewDto[];
+  sectionComments?: SectionComments;
   content?: string[];
   liveContent?: string[];
   isHidden?: boolean;
 }
 
-class SectionDetails {
+export class SectionComments{
+   
+}
+
+export class SectionDetails {
   description?: string;
   isPublished?: boolean;
   isFeatured?: boolean;
