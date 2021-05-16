@@ -107,3 +107,7 @@ export class LessonWeeklyEngagementDto extends DtoBase{
   noOfUniqueAccesses?: number; 
 	totalrecords? : number; 
 }
+
+export class UpdateLessonDto extends DtoBase{
+  lessonComment?: string[];
+}
