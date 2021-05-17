@@ -109,5 +109,5 @@ export class LessonWeeklyEngagementDto extends DtoBase{
 }
 
 export class UpdateLessonDto extends DtoBase{
-  lessonComment?: string[];
+  lessonComment?: string;
 }
