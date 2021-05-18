@@ -66,6 +66,20 @@ export class ChannelDetailsReportDto extends DtoBase {
   numberOfCourses: number;
 }
 
+
+export class ChannelLatestContentDto extends DtoBase {
+  lessonId?: number;
+	sectionId?: number;
+	channelTitle?: string; 
+	sectionTitle?: string; 
+	lessonTitle?: string; 
+	userId?: number; 
+	userName?: string;
+	firstName?: string;
+	lastName?: string;
+	sectionType?: string;
+}
+
 // const entityJson = {
 //   channel_id : "channel_id?",
 //   title : "title?",
