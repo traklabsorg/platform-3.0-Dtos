@@ -73,10 +73,13 @@ export class ChannelLatestContentDto extends DtoBase {
 	channelTitle?: string; 
 	sectionTitle?: string; 
 	lessonTitle?: string; 
-	userId?: number; 
-	userName?: string;
-	firstName?: string;
-	lastName?: string;
+	lessonCreatorUserId?: number;
+  lessonCreatorUserName?: string;
+  lessonCreatorImage?: string; 
+  lessonCoverImage?: string; 
+  sectionCreatorUserId?: number;
+  sectionCreatorUserName?: string;
+  sectionCreatorImage?: string;
 	sectionType?: string;
 }
 
