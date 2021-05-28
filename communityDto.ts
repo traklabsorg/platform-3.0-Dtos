@@ -68,7 +68,7 @@ export class CommunitySettings extends DtoBase {
   defaultLanguage?: string;
 }
 
-export enum PasswordExpirationPeriod{
+export enum PasswordExpirationPeriod {
   FORTNIGHT = 14,
   MONTH = 30,
   TWO_MONTHS = 60,
@@ -78,7 +78,7 @@ export enum PasswordExpirationPeriod{
 export enum PasswordExpiryNotificationTime {
   ONE_DAY_BEFORE = 1,
   ONE_WEEK_BEFORE = 7
-  }
+}
 
 export enum UpdateFields {
   ExternalLinkConfiguration,
@@ -129,6 +129,18 @@ export class UpdateCommunityDto extends DtoBase {
 
 export class CommunityUpdateDto extends DtoBase {
   paymentInfo?: PaymentInfo;
+}
+
+export class Coupon {
+  enterpriseCode?: string;
+  transactionId?: string;
+  numberOfLicense?: number;
+  startDate?: Date;
+  endDate?: Date;
+  ratePerUser?: number;
+  discount?: number;
+  totalValue?: number;
+  paidValue?: number;
 }
 
 // const entityJson = {
