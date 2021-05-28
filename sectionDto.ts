@@ -23,6 +23,7 @@ export class SectionDto extends DtoBase {
   content?: string[];
   liveContent?: string[];
   isHidden?: boolean;
+  isPublished?: boolean;
 }
 
 export class SectionComments{
