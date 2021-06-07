@@ -191,6 +191,8 @@ export interface CardExpiry extends INotificationData{
 }
 
 export interface NotificationData extends INotificationData{
+  webinarTitle?:string;
+  notificationEmailMessage?:string;
   communityAdmin?: string;
   link?: string;
   name?: string;
