@@ -97,7 +97,7 @@ export interface CommunityAdditionalDataType {
   alias?: string;
   publishedFrom?: string;
   publishedTill?: string;
-  identityProviderDetails?: string;
+  identityProviderDetails?: IdentityProvider;
   mobileAlias?: string;
   description?: string;
   themeName?: string;
@@ -107,6 +107,13 @@ export interface CommunityAdditionalDataType {
   loginPageImage?: string;
 }
 
+export interface IdentityProvider {
+  poolId:string,
+  clientID:string,
+  authority:string,
+  scope:string,
+  responseType:string
+}
 export class PaymentInfo {
   stripeAccount?: string;
   platformPercentageFee?: number;
