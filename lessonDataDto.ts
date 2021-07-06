@@ -16,7 +16,6 @@ export class LessonDataDto extends DtoBase {
   lesson?: LessonDto;
   lessonDataUser?: LessonDataUserDto[];
   lessonDataReview?: LessonDataReviewDto[];
-  sequenceIndex?: number;
 }
 
 
