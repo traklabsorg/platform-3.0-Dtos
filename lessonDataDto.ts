@@ -11,6 +11,7 @@ export class LessonDataDto extends DtoBase {
   isDraft?: boolean;
   lessonDetails?: LessonDetails;
   lessonId?: number;
+  sequenceIndex?: number;
   totalPoints?: number;
   lesson?: LessonDto;
   lessonDataUser?: LessonDataUserDto[];

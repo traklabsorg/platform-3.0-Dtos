@@ -12,6 +12,7 @@ export class CommunityDto extends DtoBase {
   subscriptionEndDate?: Date;
   userQuotas?: string;
   communityAdditionalData?: CommunityAdditionalDataType;
+  idpConfig?:IdentityProvider;
   extraData?: string;
   communityUrl?: string;
   externalTenantId?: number;
@@ -97,7 +98,6 @@ export interface CommunityAdditionalDataType {
   alias?: string;
   publishedFrom?: string;
   publishedTill?: string;
-  identityProviderDetails?: string;
   mobileAlias?: string;
   description?: string;
   themeName?: string;
@@ -107,6 +107,15 @@ export interface CommunityAdditionalDataType {
   loginPageImage?: string;
 }
 
+export class IdentityProvider {
+  poolId?:string
+  clientID?:string
+  authority?:string
+  scope?:string
+  responseType?:string
+  redirectUri?:Array<string>
+  logoutUri?:Array<string>
+}
 export class PaymentInfo {
   stripeAccount?: string;
   platformPercentageFee?: number;
