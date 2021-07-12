@@ -12,6 +12,6 @@ export default class NuveproUserDto extends DtoBase {
 }
 
 class NuveproSubscription {
-  teamId: string;
-  subscriptionId: string;
+  teamId: number;
+  subscriptionId: number;
 }

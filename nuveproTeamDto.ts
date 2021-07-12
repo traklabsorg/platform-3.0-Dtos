@@ -1,6 +1,7 @@
 import { DtoBase } from "submodules/platform-3.0-Dtos/submodules/platform-3.0-Common/common/DtoBase";
-export default class TeamDto extends DtoBase {
+export default class NuveproTeamDto extends DtoBase {
   name: string;
-  plan: number;
   nuveproTeamId: number;
+  description: string;
+  plan: number;
 }
